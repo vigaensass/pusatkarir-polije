@@ -58,7 +58,7 @@ p,li{
 }
 .profile .swiper-slide.card{
     border-radius:40px !important;
-    width: 600px !important;
+    width: max-content;
     height: 600px;
     max-height:100%;
     margin-bottom: 150px;
@@ -79,7 +79,7 @@ p,li{
     /* background: #fff !important; */
     /* padding: 50px; */
     height: 800px;
-    width: 900px !important;
+    width: 100%;
     /* border: 2px solid #ffa303; */
 }
 
