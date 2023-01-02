@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-danger sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
         <div class="container-fluid ">
           <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,29 +23,32 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item px-5">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Profil</a>
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Layanan</a>
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Informasi</a>
               </li>
-              <li class="nav-item px-5">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Tracer Study</a>
               </li>
-              <li class="nav-item px-5  ">
+              <li class="nav-item  ">
                 <a class="nav-link" href="#">Statistik</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link btn btn-info px-4" href="#"><i class="fa fa-user" style="padding-right: 4px;" aria-hidden="true"></i> Login</a>
               </li>
             </ul>
           </div>
         </div>
     </nav>
-    <header>
+    <header class="carousel">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -50,7 +57,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/Zona-integritas-1066x400.png" class="d-block w-100" alt="...">
+            <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" class="d-block w-100 h-100" alt="...">
           </div>
           
         </div>
@@ -65,103 +72,165 @@
       </div>
     </header>
     <div class="wrapper">
-        <div>
-            <section class="profile my-5">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-lg-5 mx-auto">
-                    <div class="card shadow p-3 mb-5 bg-body rounded" style="border: none;">
-                      <div class="card-body p-4">
-                        <div class="headed-judul mb-3">
+      
+      <section class="profile my-5">
+        <h4 class="fw-bold text-center" style="display: none;" data-index="0">Sejarah</h4>
+        <h4 class="fw-bold text-center" style="display: none;" data-index="1">Tujuan</h4>
+        <h4 class="fw-bold text-center" style="display: none;" data-index="2">Visi Career Development & Counseling</h4>
+        <h4 class="fw-bold text-center" style="display: none;" data-index="3">Misi Career Development & Counseling</h4>
+        <h4 class="fw-bold text-center" style="display: none;" data-index="4">Program Kerja</h4>
+
+        <div class="container-fluid my-5">
+          <div class="row p-5">
+            <div class="col-md-12">
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/v748-toon-111.jpg);background-position:center;background-size:cover; border:none">
+                      <div class="card-body p-4 d-flex align-items-center">
+                        <div>
                           <h4 class="fw-bold text-center">Sejarah</h4>
-                        </div>
-                        <p>Career Development & Counseling bermula dari Job Placement Center (JPC) yang didirikan pada tahun 2006 berdasarkan SK Direktur Politeknik Negeri Jember. CDC merupakan unit di Politeknik Negeri Jember yang bertujuan menjadi pusat informasi dan pelatihan serta pengembangan diri bagi mahasiswa dan alumni Politeknik Negeri Jember dalam program magang dan memasuki dunia kerja, menjadi penghubung antara Perguruan Tinggi dengan institusi pemerintah, dunia usaha dan dunia industri (dudi), mempersiapkan mahasiswa dan alumni memiliki wawasan wirausaha, menjadi tempat konseling mahasiswa, serta menjadi pusat data dan informasi tracer study Politeknik Negeri Jember.</p>
-                      </div>
-                    </div>
-                    <div class="card shadow p-3 mb-5 bg-body rounded" style="border: none;">
-                      <div class="card-body p-4">
-                        <div class="headed-judul mb-3">
-                          <h4 class="fw-bold text-center">Tujuan</h4>
-                        </div>
-                        <ol>
-                          <li>
-                            Menjadi pusat informasi lowongan kerja dan pelatihan serta pengembangan diri bagi mahasiswa dan alumni dalam memasuki dunia kerja.
-                          </li>
-                          <li>
-                            Menjadi pusat konseling mahasiswa, program persiapan karir, program magang mahasiswa.
-                          </li>
-                          <li>
-                            Menjadi penghubung antara Perguruan Tinggi dengan institusi pemerintah, dunia usaha dan dunia industri.
-                          </li>
-                          <li>
-                            Menjadi pusat data dan informasi tracer study Politeknik Negeri Jember.
-                          </li>
-                        </ol>
-                      </div>
-                    </div>
-                    <div class="card shadow p-3 mb-5 bg-body rounded" style="border: none;">
-                      <div class="card-body p-4">
-                        <div class="headed-judul mb-3">
-                          <h4 class="fw-bold text-center">Visi Career Development & Counseling</h4>
-                        </div>
-                        <ol>
-                          <li>
-                            Mempersiapkan mahasiswa dan alumni Polije untuk memiliki kemampuan dengan standar kompetensi yang dibutuhkan dunia usaha dan industri.
-                          </li>
-                          <li>
-                            Menciptakan jaringan kerja sama yang seluas-seluasnya dengan institusi pemerintah, dunia usaha dan dunia industri (dudi).
-                          </li>
-                          <li>
-                            Memberikan informasi lowongan kerja dan program magang, melakukan pelatihan mengenai dunia kerja dan kewirausahaan, serta menyelenggarakan proses perekrutan tenaga kerja.
-                          </li>
-                          <li>
-                            Melakukan tracer study secara sensus terhadap alumni Politeknik Negeri Jember.
-                          </li>
-                        </ol>
-                      </div>
-                    </div>
-                    <div class="card shadow p-3 mb-5 bg-body rounded" style="border: none;">
-                      <div class="card-body p-4">
-                        <div class="headed-judul mb-3">
-                          <h4 class="fw-bold text-center">Misi Career Development & Counseling</h4>
-                        </div>
-                        <p>Sebagai pusat pusat informasi lowongan kerja, konseling mahasiswa, program persiapan karir, program magang, pusat penempatan kerja, dan tracer study mahasiswa dan alumni Politeknik Negeri Jember.</p>
-                      </div>
-                    </div>
-                    <div class="card shadow p-3 mb-5 bg-body rounded" style="border: none;">
-                      <div class="card-body p-4">
-                        <div class="headed-judul mb-3">
-                          <h4 class="fw-bold text-center">Program Kerja</h4>
+                          <p>Career Development & Counseling bermula dari Job Placement Center (JPC) yang didirikan pada tahun 2006 berdasarkan SK Direktur Politeknik Negeri Jember. CDC merupakan unit di Politeknik Negeri Jember yang bertujuan menjadi pusat informasi dan pelatihan serta pengembangan diri bagi mahasiswa dan alumni Politeknik Negeri Jember dalam program magang dan memasuki dunia kerja, menjadi penghubung antara Perguruan Tinggi dengan institusi pemerintah, dunia usaha dan dunia industri (dudi), mempersiapkan mahasiswa dan alumni memiliki wawasan wirausaha, menjadi tempat konseling mahasiswa, serta menjadi pusat data dan informasi tracer study Politeknik Negeri Jember.</p>
                         </div>
                       </div>
-                      <ol>
-                        <li>Peningkatan Kinerja dan Pengembangan Sistem CDC</li>
-                        <li>Program Pelatihan Pengembangan Staff CDC</li>
-                        <li>Perbaikan database Internal dan Eksternal CDC</li>
-                        <li>Penyiapan Media Sosialisasi Fungsi dan Peran CDC</li>
-                        <li>Sosialisasi CDC ke Alumni Politeknik Negeri Jember</li>
-                        <li>Follow up kerjasama dengan Dunia usaha/Industri yang telah dijalin Politeknik Negeri Jember</li>
-                        <li>Program kunjungan ke Perusahaan/Instansi.</li>
-                        <li>Program Open House dan Temu Mitra Industri (Job Market Fair)</li>
-                        <li>Program Rekruitmen Karyawan Perusahaan</li>
-                        <li>Fasilitator penyedia tenaga kerja sesuai kompetensi</li>
-                        <li>Program Pengembangan Diri</li>
-                        <li>Pembekalan Memasuki Dunia Kerja</li>
-                        <li>Program Pelatihan Persiapan Kerja</li>
-                        <li>Membuat kuesioner Tracer Study standar Politeknik Negeri Jember</li>
-                        <li>Melakukan Tracer Study</li>
-                        <li>Membuat laporan Tracer Study</li>
-                        <li>Mensosialisasikan hasil Tracer Study</li>
-                      </ol>
-                    </div>
-                    
                   </div>
+                  <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/v748-toon-103.jpg);background-position:center;background-size:cover; border:none">
+                      <div class="card-body p-4 d-flex align-items-center">
+                        <div class=" mb-3 headed-judul">
+                          <h4 class="fw-bold text-center">Tujuan</h4>
+                          <ol>
+                            <li>
+                              Menjadi pusat informasi lowongan kerja dan pelatihan serta pengembangan diri bagi mahasiswa dan alumni dalam memasuki dunia kerja.
+                            </li>
+                            <li>
+                              Menjadi pusat konseling mahasiswa, program persiapan karir, program magang mahasiswa.
+                            </li>
+                            <li>
+                              Menjadi penghubung antara Perguruan Tinggi dengan institusi pemerintah, dunia usaha dan dunia industri.
+                            </li>
+                            <li>
+                              Menjadi pusat data dan informasi tracer study Politeknik Negeri Jember.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/4850037.jpg);background-position:center;background-size:cover; border:none">
+                    <!-- <div class="card bg-body rounded" style="height: 59vh"> -->
+                      <div class="card-body p-4 d-flex align-items-center">
+                        <div class="mb-3 headed-judul" >
+                          <h4 class="fw-bold text-center">Visi Career Development & Counseling</h4>
+                          <ol>
+                            <li>
+                              Mempersiapkan mahasiswa dan alumni Polije untuk memiliki kemampuan dengan standar kompetensi yang dibutuhkan dunia usaha dan industri.
+                            </li>
+                            <li>
+                              Menciptakan jaringan kerja sama yang seluas-seluasnya dengan institusi pemerintah, dunia usaha dan dunia industri (dudi).
+                            </li>
+                            <li>
+                              Memberikan informasi lowongan kerja dan program magang, melakukan pelatihan mengenai dunia kerja dan kewirausahaan, serta menyelenggarakan proses perekrutan tenaga kerja.
+                            </li>
+                            <li>
+                              Melakukan tracer study secara sensus terhadap alumni Politeknik Negeri Jember.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+                    <!-- </div> -->
+                  </div>
+                  <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/abstract-blue-geometric-shapes-background.jpg);background-position:center;background-size:cover; border:none">
+                      <div class="card-body p-4 d-flex align-items-center">
+                        <div class="mb-3 headed-judul">
+                          <h4 class="fw-bold text-center">Misi Career Development & Counseling</h4>
+                          <p>Sebagai pusat pusat informasi lowongan kerja, konseling mahasiswa, program persiapan karir, program magang, pusat penempatan kerja, dan tracer study mahasiswa dan alumni Politeknik Negeri Jember.</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/abstract-blue-geometric-shapes-background.jpg);background-position:center;background-size:cover; border:none">
+                    <!-- <div class="card bg-body rounded" style="height: 59vh"> -->
+                      <div class="card-body p-4 d-flex align-items-center">
+                        <div class="mb-3 headed-judul">
+                          <h4 class="fw-bold text-center">Program Kerja</h4>
+                          <ol>
+                            <li>Peningkatan Kinerja dan Pengembangan Sistem CDC</li>
+                            <li>Program Pelatihan Pengembangan Staff CDC</li>
+                            <li>Perbaikan database Internal dan Eksternal CDC</li>
+                            <li>Penyiapan Media Sosialisasi Fungsi dan Peran CDC</li>
+                            <li>Sosialisasi CDC ke Alumni Politeknik Negeri Jember</li>
+                            <li>Follow up kerjasama dengan Dunia usaha/Industri yang telah dijalin Politeknik Negeri Jember</li>
+                            <li>Program kunjungan ke Perusahaan/Instansi.</li>
+                            <li>Program Open House dan Temu Mitra Industri (Job Market Fair)</li>
+                            <li>Program Rekruitmen Karyawan Perusahaan</li>
+                            <li>Fasilitator penyedia tenaga kerja sesuai kompetensi</li>
+                            <li>Program Pengembangan Diri</li>
+                            <li>Pembekalan Memasuki Dunia Kerja</li>
+                            <li>Program Pelatihan Persiapan Kerja</li>
+                            <li>Membuat kuesioner Tracer Study standar Politeknik Negeri Jember</li>
+                            <li>Melakukan Tracer Study</li>
+                            <li>Membuat laporan Tracer Study</li>
+                            <li>Mensosialisasikan hasil Tracer Study</li>
+                          </ol>
+                        </div>
+                      </div>
+                    <!-- </div> -->
+                  </div>
+                
                 </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                 <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+
               </div>
-            </section>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <div class="row py-4">
+            <div class="col-md-7 mx-auto">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            afa
+          </div>
+        </div>
+      </section>
     </div>
 </body>
 <!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- swipper js -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  console.log();
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    centeredSlides: true,
+    loop: true ,
+    spaceBetween: 45,
+    watchSlidesVisibility: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + $("h4[data-index='" + index + "']").text() + "</span>";
+     
+      },
+    },
+  });
+</script>
 </html>
