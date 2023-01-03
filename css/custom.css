@@ -18,6 +18,9 @@ body {
     background-color: var(--bg-color) !important;
 }
 /* navbar */
+.dropdown-toggle::after{
+    display: none !important;
+}
 .navbar-light .navbar-nav .nav-link{
     margin-top: 20px;
     color: #fff;
@@ -173,6 +176,9 @@ footer ul{
         display: flex;
         flex-flow: column;
         flex-wrap: wrap;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        margin: 15px;
     }
 }
 
