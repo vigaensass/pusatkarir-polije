@@ -46,6 +46,9 @@ header.carousel{
     width: auto;
     height: max-content;
 }
+header#content-profile{
+    height: 900px;
+}
 p,li{
     line-height: 25.6px;
 }
@@ -142,6 +145,17 @@ p,li{
     border-radius: 20px;
     border: none;
     padding: 15px 10px;
+}
+
+footer .footer{
+    height: max-content;
+    background-color: #F3A261;
+}
+footer .footer-copyright {
+    height: max-content;
+}
+footer ul{
+    list-style-type: none;
 }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
