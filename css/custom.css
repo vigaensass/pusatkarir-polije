@@ -133,11 +133,11 @@ p,li{
     background-color: var(--bg-primary);
     border: none;
 }
-.program .btn-outline-primary{
+.btn-outline-primary{
     color: var(--bg-primary);
     border-color: var(--bg-primary);
 }
-.program button:hover.btn-outline-primary{
+button:hover.btn-outline-primary{
     background-color: var(--bg-primary) !important;
     color: #fff;
 }
