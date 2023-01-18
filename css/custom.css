@@ -311,6 +311,12 @@ button:hover.btn-outline-primary{
     font-size:  var(--swiper-navigation-size);
     font-weight: 900;
 }
+
+/* detail-lowongan */
+div .detail .detail-alamat ul{
+    list-style-type: none;
+}
+
 footer .footer{
     height: max-content;
     background-color: var(--bg-primary);
