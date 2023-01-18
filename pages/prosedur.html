@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
@@ -42,7 +47,7 @@
                   <li><a class="dropdown-item" href="bimbingan-konseling.html">Bimbingan Konseling</a></li>
                   <li><a class="dropdown-item" href="pelatihan-workshop.html">Pelatihan Workshop</a></li>
                   <li><a class="dropdown-item" href="job-fair.html">Job Fair</a></li>
-                  <li><a class="dropdown-item" href="">Fasilitas</a></li>
+                  <li><a class="dropdown-item" href="fasilitas.html">Fasilitas</a></li>
                   <li><a class="dropdown-item" href="informasi.html">Bebas Tanggungan Mahasiswa</a></li>
                 </ul>
               </li>
@@ -51,11 +56,11 @@
                   Informasi
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Keanggotaan</a></li>
-                  <li><a class="dropdown-item" href="#">Prosedur</a></li>
+                  <li><a class="dropdown-item" href="keanggotaan.html">Keanggotaan</a></li>
+                  <li><a class="dropdown-item" href="prosedur.html">Prosedur</a></li>
                    
                   <li><a class="dropdown-item" href="#">Agenda</a></li>
-                  <li><a class="dropdown-item" href="#">Galeri Foto</a></li>
+                  <li><a class="dropdown-item" href="galeri.html">Galeri Foto</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
@@ -83,48 +88,46 @@
     </nav>
     <header id="content-profile" class="carousel position-relative" style="background-image: url(../img/background-1.png);background-position:center;background-size:cover; border:none">
       <div class="text-center text-white fw-bold position-absolute top-50 start-50 translate-middle">
-        <h1 class="text-uppercase">Statistik</h1>
+        <h1 class="text-uppercase">Prosedur yang ada di Career Development & Counseling</h1>
       </div>
     </header>
     <div class="wrapper">
       <section class="profile my-5">
         <div class="container-fluid">
           <div class="content p-4">
-            <h4 class="fw-bold">Statistik</h4>
             <div class="row py-3">
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas id="myChart"></canvas>
-                        </div>
+              <div class="col-md-3">
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="isi" data-index="1">Informasi Bebas Tanggungan Online Mahasiswa di CDC</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="formulir">Surat Edaran Pendaftaran Keanggotaan IKPJ</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="surat">Formulir Exit Survey Calon Lulusan Polije Tahun 2022</a>
+              </div>
+              <div class="col-md-9">
+                <div id="c-isi" class="hidden d-block">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas class="w-50 h-50 mx-auto" id="pie"></canvas>
-                        </div>
+                <div id="c-formulir" class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota1.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas class="w-50 h-50 mx-auto" id="piesatu"></canvas>
-                        </div>
+                <div id="c-surat" class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas class="w-50 h-50 mx-auto" id="piedua"></canvas>
-                        </div>
-                    </div>
-                </div>
-              
+                
+              </div>
             </div>
           </div>
         </div>
@@ -177,139 +180,40 @@
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<!-- chart js -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- swipper js -->
 <script>
-    const ctx = document.getElementById('myChart');
-    new Chart(ctx, {
-      type: 'bar',
-      data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-          label: '# of Votes',
-          data: [12, 19, 3, 5, 2, 3],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    $("#isi").click(function(){ 
+      var index = $(this).data("index");
+      console.log(index);
+      if(index == 1){
+        $('#c-isi').addClass('hidden d-block'); 
+        $('#c-formulir').removeClass(' d-block'); 
+        $('#c-surat').removeClass(' d-block'); 
+        $('#c-bimbingan').removeClass('d-block'); 
+        $('#c-publikasi').removeClass('d-block'); 
+        $('#c-pengajuan').removeClass('d-block'); 
+        $('#c-panduan').removeClass('d-block'); 
       }
     });
-
-    var piechart = document.getElementById('pie').getContext('2d');
-    var piechartsatu = document.getElementById('piesatu').getContext('2d');
-    var piechartdua = document.getElementById('piedua').getContext('2d');
-    var myChart = new Chart(piechart, {
-        type: 'pie',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
+    $("#formulir").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-formulir').addClass('d-block'); 
+      $('#c-surat').removeClass('d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-pengajuan').removeClass('d-block'); 
+      $('#c-panduan').removeClass('d-block'); 
     });
-    var myChart = new Chart(piechartdua, {
-        type: 'pie',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
+    $("#surat").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-formulir').removeClass('d-block'); 
+      $('#c-surat').addClass('d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-pengajuan').removeClass('d-block'); 
+      $('#c-panduan').removeClass('d-block'); 
     });
-    var myChart = new Chart(piechartsatu, {
-        type: 'pie',
-        data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-            datasets: [{
-                label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
-                    'rgba(54, 162, 235, 0.2)',
-                    'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)',
-                    'rgba(153, 102, 255, 0.2)',
-                    'rgba(255, 159, 64, 0.2)'
-                ],
-                borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)',
-                    'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }]
-            }
-        }
-    });
+    
+    
 </script>
 </html>
