@@ -354,6 +354,9 @@ button:hover.btn-outline-primary,a:hover.btn-outline-primary{
     background: #fff;
 
 }
+div .detail .detail-alamat ul{
+    list-style-type: none;
+}
 footer .footer{
     height: max-content;
     background-color: var(--bg-primary);
