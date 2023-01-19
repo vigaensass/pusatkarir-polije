@@ -1,9 +1,13 @@
 $(window).scroll(function() {
+    // console.log($(document).scrollTop());
     if ($(document).scrollTop() > 50) {
-        $('nav').removeClass('transparent');
-        $('header').removeClass('position')
+        // $('header').removeClass('position')
+        $('nav').addClass('bg-info')
+        $('header').removeClass('carousel');
     } else {
-        $('header').addClass('position')
-        $('nav').addClass('transparent');
+        $('nav').addClass('bg-transparent');
+        $('header').addClass('carousel');
+
+        $('nav').removeClass('bg-info');
     }
 });

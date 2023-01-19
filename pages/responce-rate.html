@@ -68,8 +68,8 @@
                   <li><a class="dropdown-item" href="tracer-study.html">Tentang Tracer Study</a></li>
                   <li><a class="dropdown-item" href="responce-rate.html">Statistik Hasil Tracer Study</a></li>
                   <li><a class="dropdown-item" href="#">Data Pengisian Kuisioner Tracer Study</a></li>
-                  <li><a class="dropdown-item" href="#">Survey Kepuasan Pengguna Lulusan Polije</a></li>
-                  <li><a class="dropdown-item" href="#">Statistik Kepuasan Penguna Lulusan Polije</a></li>
+                  <li><a class="dropdown-item" href="survey-kepuasan.html">Survey Kepuasan Pengguna Lulusan Polije</a></li>
+                  <li><a class="dropdown-item" href="responce-rate-survey.html">Statistik Kepuasan Penguna Lulusan Polije</a></li>
                   <li><a class="dropdown-item" href="#">Laporan Tracer Study</a></li>
                 </ul>
               </li>
@@ -90,13 +90,13 @@
     </header> -->
     <div class="wrapper">
       <section class="profile my-5">
-        <div class="container-fluid">
+        <div class="container-fluid p-5">
           <div class="content p-4">
             <h4 class="fw-bold">Statistik & Respone Rate Tracer Study</h4>
             <div>
                 <form action="">
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
+                    <div class="row mb-4">
+                        <div class="form-group col-md-5">
                             <select name="" id="program-studi" class="form-control program-studi">
                                 <option value="">Cari Program Studi</option>
                                 <option value="">Semua Prodi</option>
@@ -116,19 +116,41 @@
                                 <option value="">Teknologi Produksi Tanaman Pangan (41322)</option>
                             </select>
                         </div>
+                        <div class="form-group col-md-6">
+                          <select name="" id="tahun-lulus" class="form-control tahun-lulus">
+                              <option value="">Semua Tahun</option>
+                              <option value="">Tahun 2009</option>
+                              <option value="">Tahun 2010</option>
+                              <option value="">Tahun 2011</option>
+                              <option value="">Tahun 2012</option>
+                              <option value="">Tahun 2013</option>
+                              <option value="">Tahun 2014</option>
+                              <option value="">Tahun 2015</option>
+                              <option value="">Tahun 2016</option>
+                              <option value="">Tahun 2017</option>
+                              <option value="">Tahun 2018</option>
+                              <option value="">Tahun 2019</option>
+                              <option value="">Tahun 2020</option>
+                              <option value="">Tahun 2021</option>
+                              <option value="">Tahun 2022</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-1">
+                          <button class="btn btn-light w-100 pb-2">Filter</button>
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="row py-3">
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas id="myChart"></canvas>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas id="pieempat"></canvas>
+                      </div>
+                  </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="card-body">
                             <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
@@ -136,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="card shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="card-body">
                             <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
@@ -144,13 +166,98 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                        <div class="card-body">
-                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
-                            <canvas class="w-50 h-50 mx-auto" id="piedua"></canvas>
-                        </div>
-                    </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="piedua"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas id="myChart"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas id="myChartdua"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas id="myCharttiga"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pielima"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pieenam"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Bagaimana Mahasiswa/Alumni mencari pekerjaan</h5>
+                          <div style="height: 307px;">
+                            <canvas class="h-100" id="pietiga"></canvas>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pietujuh"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="piedelapan"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center my-4 pagination-statistik">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item active"><a class="page-link " href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true"><i class="fa fa-angle-right fa-2x  " aria-hidden="true"></i></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               
             </div>
@@ -212,8 +319,51 @@
 
 <script>
     $('#program-studi').select2();
+    $('#tahun-lulus').select2();
     const ctx = document.getElementById('myChart');
+    const dua = document.getElementById('myChartdua');
+    const tiga = document.getElementById('myCharttiga');
+    const lima = document.getElementById('pielima');
+    const enam = document.getElementById('pieenam');
+    const tujuh = document.getElementById('pietujuh');
+    const delapan = document.getElementById('piedelapan');
     new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    new Chart(dua, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    new Chart(tiga, {
       type: 'bar',
       data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -235,6 +385,69 @@
     var piechart = document.getElementById('pie').getContext('2d');
     var piechartsatu = document.getElementById('piesatu').getContext('2d');
     var piechartdua = document.getElementById('piedua').getContext('2d');
+    var piechartempat = document.getElementById('pieempat').getContext('2d');
+    new Chart(piechartempat, {
+      type: 'line',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    const test = {
+      type: 'bar',
+      data: {
+          labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+          datasets: [{
+              label: "My First dataset",
+              backgroundColor: "rgba(255,99,132,0.2)",
+              borderColor: "rgba(255,99,132,1)",
+              hoverBackgroundColor: "rgba(255,99,132,0.5)",
+              hoverBorderColor: "rgba(255,99,132,1)",
+              data: [65, -59, -90, 81, 56, 55, 40],
+          }, {
+              label: "My Second dataset",
+              backgroundColor: "rgba(54,162,235,0.2)",
+              borderColor: "rgba(54,162,235,1)",
+              hoverBackgroundColor: "rgba(54,162,235,0.5)",
+              hoverBorderColor: "rgba(54,162,235,1)",
+              data: [28, -48, -40, 19, 96, 27, 100]
+          }]
+      },
+      options: {
+        // Elements options apply to all of the options unless overridden in a dataset
+        // In this case, we are setting the border of each horizontal bar to be 2px wide
+        elements: {
+          bar: {
+            borderWidth: 2,
+          }
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'right',
+          },
+          title: {
+            display: true,
+            text: 'Chart.js Horizontal Bar Chart'
+          }
+        }
+      },
+  };
+  
+  var piecharttiga = document.getElementById("pietiga").getContext("2d");
+  new Chart(piecharttiga, test);
     var myChart = new Chart(piechart, {
         type: 'pie',
         data: {
@@ -342,6 +555,150 @@
                 }]
             }
         }
+    });
+    var myChart = new Chart(lima, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(enam, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(tujuh, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(delapan, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
     });
 </script>
 </html>

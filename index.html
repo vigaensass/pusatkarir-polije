@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
+    
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-transparent">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top"> -->
         <div class="container-fluid ">
           <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,9 +54,8 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="pages/keanggotaan.html">Keanggotaan</a></li>
-                  <li><a class="dropdown-item" href="#">Prosedur</a></li>
+                  <li><a class="dropdown-item" href="pages/prosedur.html">Prosedur</a></li>
                    
-                  <li><a class="dropdown-item" href="#">Agenda</a></li>
                   <li><a class="dropdown-item" href="pages/informasi.html">Galeri Foto</a></li>
                 </ul>
               </li>
@@ -64,10 +65,10 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                   <li><a class="dropdown-item" href="pages/tracer-study.html">Tentang Tracer Study</a></li>
-                  <li><a class="dropdown-item" href="#">Statistik Hasil Tracer Study</a></li>
-                  <li><a class="dropdown-item" href="#">Data Pengisian Kuisioner Tracer Study</a></li>
-                  <li><a class="dropdown-item" href="#">Survey Kepuasan Pengguna Lulusan Polije</a></li>
-                  <li><a class="dropdown-item" href="#">Statistik Kepuasan Penguna Lulusan Polije</a></li>
+                  <li><a class="dropdown-item" href="pages/responce-rate.html">Statistik Hasil Tracer Study</a></li>
+                  <li><a class="dropdown-item" href="pages/">Data Pengisian Kuisioner Tracer Study</a></li>
+                  <li><a class="dropdown-item" href="pages/survey-kepuasan.html">Survey Kepuasan Pengguna Lulusan Polije</a></li>
+                  <li><a class="dropdown-item" href="pages/responce-rate-survey.html">Statistik Kepuasan Penguna Lulusan Polije</a></li>
                   <li><a class="dropdown-item" href="#">Laporan Tracer Study</a></li>
                 </ul>
               </li>
@@ -89,10 +90,20 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image: url('img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg'), linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));">
-            <div class="gambar">
-              <img src="img/vasily-koloda-8CqDvPuo_kI-unsplash.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
+          <div class="carousel-item active">
+            <section id="video">
+              <div class="overlay content-invisible">
+                <div class="position-relative w-100 h-100 container " >
+                  <div class="position-absolute top-50 start-0 translate-middle-y text-white mx-5">
+                    <h1 class="fw-bold">Career Development & Counselling </h1>
+                    <h1 class="fw-bold">Politeknik Negeri Jember</h1>
+                  </div>
+
+                </div>
+              </div>
+                  <!-- Ubah link dalam "src" sesuai video yang diinginkan -->
+              <video src="img/bg.mp4" loop muted autoplay></video>
+          </section>
           </div>
           
         </div>
@@ -184,7 +195,7 @@
                   </div>
                   <div class="swiper-slide card rounded shadow d-flex align-self-center" style="background-image: url(img/abstract-blue-geometric-shapes-background.jpg);background-position:center;background-size:cover; border:none">
                     <!-- <div class="card bg-body rounded" style="height: 59vh"> -->
-                      <div class="card-body p-4 d-flex align-items-center">
+                      <div class="card-body p-4 ">
                         <div class="mb-3 headed-judul">
                           <h4 class="fw-bold text-center">Program Kerja</h4>
                           <ol>
@@ -236,14 +247,14 @@
         </div>
         <div class="container">
           <div align="center" class="mb-4">
-            <button class="btn btn-default filter-button active" data-filter="all">Lowongan</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">Intership</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Perusahaan</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Pelamar</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Alumni</button>
+            <button class="btn btn-default filter-button active" data-filter="lowongan">Lowongan</button>
+            <button class="btn btn-default filter-button" data-filter="inter">Intership</button>
+            <button class="btn btn-default filter-button" data-filter="peru">Perusahaan</button>
+            <button class="btn btn-default filter-button" data-filter="pel">Pelamar</button>
+            <button class="btn btn-default filter-button" data-filter="alu">Alumni</button>
           </div>
-          <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe mb-3" >
+          <div class="row" id="program-content">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3" >
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -260,12 +271,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
               
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter sprinkle mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body" >
                   <div class="d-flex justify-content-center">
@@ -282,12 +293,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter hdpe mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -304,12 +315,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter irrigation mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter inter mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -326,12 +337,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter spray mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter inter mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -348,12 +359,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter irrigation mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter peru mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -370,12 +381,12 @@
                   </div>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter spray mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter alu mb-3">
               <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -397,7 +408,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter irrigation mb-3">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter pel mb-3">
              <div class="card" style="height: 420px;">
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
@@ -421,7 +432,7 @@
 
           </div>
           <div class="py-5 d-flex justify-content-center">
-            <button class="btn btn-outline-primary w-50">Selengkapnya</button>
+            <a class="btn btn-outline-primary w-50" id="button-selengkapnya">Selengkapnya</a>
           </div>
         </div>
       </section>
@@ -473,7 +484,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse mb-3 mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -490,7 +501,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -507,7 +518,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -524,7 +535,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -541,7 +552,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -558,7 +569,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -583,7 +594,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseOne" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -600,7 +611,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -617,7 +628,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -634,7 +645,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -651,7 +662,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -668,7 +679,7 @@
                       <p class="m-0">25 January 2022</p>
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse mb-3" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -839,7 +850,7 @@
             <div class="col-md-4">
               <h5 class="fw-bold mb-3">Our Location</h5>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="rounded embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.4546105100794!2d113.720981!3d-8.1568678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b6c06feea7%3A0x8014dc75ef0320b7!2sGedung%20Pasca%20Sarjana%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1672764502748!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="rounded embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.4546105100794!2d113.720981!3d-8.1568678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b6c06feea7%3A0x8014dc75ef0320b7!2sGedung%20Pasca%20Sarjana%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1672764502748!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               
             </div>
@@ -861,9 +872,37 @@
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/custom.js"></script>
 <script>
+  var base = window.location.origin;
+  var a = $(".filter-button.active").attr('data-filter');
+  $(".filter").not('.'+a).hide('3000');
+  $('.filter').filter('.'+a).show('3000');
+  var a = document.getElementById('button-selengkapnya');
+  a.href = base+'/lowongan';
+
   $(".filter-button").click(function(){
+      var base = window.location.origin;
+     //data-filter="inter">Intership</button>
+     // <button class="btn btn-default filter-button" data-filter="peru">Perusahaan</button>
+      //<button class="btn btn-default filter-button" data-filter="pel">Pelamar</button>
+      //<button class="btn btn-default filter-button" data-filter="alu">Alumni</button>
       var value = $(this).attr('data-filter');
       $('button').removeClass('active');
+      if(value == "lowongan"){
+        var a = document.getElementById('button-selengkapnya');
+        a.href = base+'/lowongan';
+      }else if(value == "inter"){
+        var a = document.getElementById('button-selengkapnya');
+        a.href = base+'/intership';
+      }else if(value == "peru"){
+        var a = document.getElementById('button-selengkapnya');
+        a.href = base+'/perusahaan';
+      }else if(value == "pel"){
+        var a = document.getElementById('button-selengkapnya');
+        a.href = base+'/pelamar';
+      }else if(value == "alu"){
+        var a = document.getElementById('button-selengkapnya');
+        a.href = base+'/alumni';
+      }
       $(this).addClass('active');
         if(value == "all")
         {
@@ -877,10 +916,7 @@
         }
     });
 
-    if ($(".filter-button").removeClass("active")) {
-      $(this).removeClass("active");
-    }
-    $(this).addClass("active");
+  
   var artikel = new Swiper('#artikel',{
     slidesPerView: 2,
     spaceBetween: 50,
