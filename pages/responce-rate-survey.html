@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top
+    ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profil
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="profil.html">Struktur Organisasi CDC</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Layanan
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="bimbingan-konseling.html">Bimbingan Konseling</a></li>
+                  <li><a class="dropdown-item" href="pelatihan-workshop.html">Pelatihan Workshop</a></li>
+                  <li><a class="dropdown-item" href="job-fair.html">Job Fair</a></li>
+                  <li><a class="dropdown-item" href="fasilitas.html">Fasilitas</a></li>
+                  <li><a class="dropdown-item" href="informasi.html">Bebas Tanggungan Mahasiswa</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Informasi
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="keanggotaan.html">Keanggotaan</a></li>
+                  <li><a class="dropdown-item" href="prosedur.html">Prosedur</a></li>
+                   
+                  <li><a class="dropdown-item" href="#">Agenda</a></li>
+                  <li><a class="dropdown-item" href="galeri.html">Galeri Foto</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tracer Study
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="tracer-study.html">Tentang Tracer Study</a></li>
+                  <li><a class="dropdown-item" href="responce-rate.html">Statistik Hasil Tracer Study</a></li>
+                  <li><a class="dropdown-item" href="data-pengisi.html">Data Pengisian Kuisioner Tracer Study</a></li>
+                  <li><a class="dropdown-item" href="survey-kepuasan.html">Survey Kepuasan Pengguna Lulusan Polije</a></li>
+                  <li><a class="dropdown-item" href="#">Statistik Kepuasan Penguna Lulusan Polije</a></li>
+                   <li><a class="dropdown-item" href="laporan.html">Laporan Tracer Study</a></li>
+                </ul>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link" href="statistika.html">Statistik</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link btn btn-info px-4" href="#">  Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- <header id="content-profile" class="carousel position-relative" style="background-image: url(../img/background-1.png);background-position:center;background-size:cover; border:none">
+      <div class="text-center text-white fw-bold position-absolute top-50 start-50 translate-middle">
+        <h1 class="text-uppercase">Statistik & Respone Rate Tracer Study</h1>
+      </div>
+    </header> -->
+    <div class="wrapper">
+      <section class="profile my-5">
+        <div class="container-fluid p-5">
+          <div class="content p-4">
+            <h4 class="fw-bold">Survey Kepuasan Penguna Lulusan POLIJE</h4>
+            <div>
+                <form action="">
+                    <div class="row mb-4">
+                        <div class="form-group col-md-5">
+                            <select name="" id="program-studi" class="form-control program-studi">
+                                <option value="">Cari Program Studi</option>
+                                <option value="">Semua Prodi</option>
+                                <option value="">Budidaya Tanaman Perkebunan (54371)</option>
+                                <option value="">Gizi Klinik (13311)</option>
+                                <option value="">Ketenikan Pertanian (41401)</option>
+                                <option value="">Manajemen Agribisnis (54401)</option>
+                                <option value="">Manajemen Agroindustri (41311)</option>
+                                <option value="">Manajemen Bisnis Unggas (54331)</option>
+                                <option value="">Produksi Tanaman Hortikultura (54412)</option>
+                                <option value="">Produksi Ternak (54432)</option>
+                                <option value="">Rekam Medik (13362)</option>
+                                <option value="">Teknik Energi Terbarukan (21036)</option>
+                                <option value="">Teknik Informatika (55301)</option>
+                                <option value="">Teknik Komputer (56401)</option>
+                                <option value="">Teknik Produksi Benih (41331)</option>
+                                <option value="">Teknologi Produksi Tanaman Pangan (41322)</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <select name="" id="tahun-lulus" class="form-control tahun-lulus">
+                              <option value="">Semua Tahun</option>
+                              <option value="">Tahun 2009</option>
+                              <option value="">Tahun 2010</option>
+                              <option value="">Tahun 2011</option>
+                              <option value="">Tahun 2012</option>
+                              <option value="">Tahun 2013</option>
+                              <option value="">Tahun 2014</option>
+                              <option value="">Tahun 2015</option>
+                              <option value="">Tahun 2016</option>
+                              <option value="">Tahun 2017</option>
+                              <option value="">Tahun 2018</option>
+                              <option value="">Tahun 2019</option>
+                              <option value="">Tahun 2020</option>
+                              <option value="">Tahun 2021</option>
+                              <option value="">Tahun 2022</option>
+                          </select>
+                        </div>
+                        <div class="form-group col-md-1">
+                          <button class="btn btn-light w-100 pb-2">Filter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-4">
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                            <canvas class="w-50 h-50 mx-auto" id="pie"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                        <div class="card-body">
+                            <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                            <canvas class="w-50 h-50 mx-auto" id="piesatu"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="piedua"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pielima"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pieenam"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="pietujuh"></canvas>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card shadow-lg p-3 bg-body rounded">
+                      <div class="card-body">
+                          <h5 class="text-center mb-3">Aspek Penilaian terhadap Alumni [Memecahkan masalah kompleks]</h5>
+                          <canvas class="w-50 h-50 mx-auto" id="piedelapan"></canvas>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="">
+      <div class="footer">
+        <div class="container-fluid p-5 text-white">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Contact Us</h5>
+              <ul class="p-0">
+                <li class="mb-3"><i class="fa fa-phone fa-2x" aria-hidden="true"></i>  +62 331 333 532</li>
+                <li class="mb-3"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> +62 811 359 1500</li>
+                <li class="mb-3"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> cdc@polije.ac.id</li>
+                <li class="mb-3"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> pusatkarir.polije.ac.id</li>
+                <li class="mb-3"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Gedung Pasca Sarjana Lantai 1 Jl. Mastrip 164 Jember, Indonesia</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Related Link</h5>
+              <ul class="p-0">
+                <li class="mb-2"><a href="http://">polije.ac.id</a></li>
+                <li class="mb-2"><a href="http://">sim-online.polije.ac.id</a></li>
+                <li class="mb-2"><a href="http://">Polije | LinkedIn</a></li>
+                <li class="mb-2"><a href="http://">CDC POLIJE | LinkedIn</a></li>
+                <li class="mb-2"><a href="http://">CDC POLIJE | Facebook</a></li>
+                <li class="mb-2"><a href="http://">CDC POLIJE | Instagram</a></li>
+                <li class="mb-2"><a href="http://">E-Counseling POLIJE</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5 class="fw-bold mb-3">Our Location</h5>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="rounded embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.4546105100794!2d113.720981!3d-8.1568678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b6c06feea7%3A0x8014dc75ef0320b7!2sGedung%20Pasca%20Sarjana%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1672764502748!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright bg-dark">
+        <div class="p-3 text-center text-white">
+          <p>@Copyright <strong class="text-uppercase">CDC Politeknik Negeri Jember.</strong>All right reserved</p>
+          <small>Designed by Viga Ensas Fii Sabilillah</small>
+        </div>
+      </div>
+    </footer>
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- chart js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- swipper js -->
+
+<script>
+    $('#program-studi').select2();
+    $('#tahun-lulus').select2();
+    const tiga = document.getElementById('myCharttiga');
+    const lima = document.getElementById('pielima');
+    const enam = document.getElementById('pieenam');
+    const tujuh = document.getElementById('pietujuh');
+    const delapan = document.getElementById('piedelapan');
+    
+    new Chart(tiga, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+
+    var piechart = document.getElementById('pie').getContext('2d');
+    var piechartsatu = document.getElementById('piesatu').getContext('2d');
+    var piechartdua = document.getElementById('piedua').getContext('2d');
+   
+    var myChart = new Chart(piechart, {
+        type: 'pie',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var myChart = new Chart(piechartdua, {
+        type: 'pie',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var myChart = new Chart(piechartsatu, {
+        type: 'pie',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
+    var myChart = new Chart(lima, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(enam, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(tujuh, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+    var myChart = new Chart(delapan, {
+      type: 'pie',
+      data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)',
+                  'rgba(255, 159, 64, 0.2)'
+              ],
+              borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)',
+                  'rgba(255, 159, 64, 1)'
+              ],
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+      }
+    });
+</script>
+</html>
