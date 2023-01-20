@@ -465,15 +465,40 @@ div .detail .detail-alamat ul{
 } */
 .pagination-statistik .page-link{
     border-radius: 100px;
-    padding: 20px 30px;
+    padding: 15px 25px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 18px;
     color: #3F3D3D;
+}
+.pagination-statistik .page-link i{
+    font-size: 28px;
+}
+.pagination-statistik .page-item.active .page-link{
+    z-index: 3;
+    color: #fff;
+    background-color: #3F3D3D;
+    border-color: #3F3D3D;
+}
+.pagination-statistik .page-item a:hover.page-link{
+    z-index: 3;
+    color: #fff;
+    background-color: #3F3D3D;
+    border-color: #3F3D3D;
 }
 .pagination-statistik .page-item:last-child .page-link{
     border-radius: 100px;
     background-color: transparent;
     border: none;
+}
+#table-responce-rate .rounded{
+    border-radius: 12px !important;
+}
+#table-responce-rate table tr{
+    background-color: #363636 !important;
+    color: #fff;
+}
+#table-responce-rate table thead tr th{
+    padding: 20px;
 }
 footer .footer{
     height: max-content;
@@ -490,6 +515,56 @@ footer ul li a{
     color: #fff;
     font-size: 18px;
 }
+
+@media only screen and  (max-width: 760px) {
+    td, tr { display: block; }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    tr { border: 1px solid #000; }
+    tr + tr { margin-top: 1.5em; }
+    td {
+      /* make like a "row" */
+      border: none;
+      border-bottom: 2px solid #000;
+      position: relative;
+      background-color: #FBFDF7 !important;
+      color: #000;
+      padding: 5 !important;
+      text-align: left;
+      font-size: 20px;
+      
+    }
+        td:before {
+        content: attr(data-label) ' :';
+        display: inline-block;
+        line-height: 1.5;
+        margin-left: 0;
+        margin-bottom: 20px;
+        background-color: #D9D9D9;
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        width: 100%;
+        white-space: nowrap;
+        }
+        td::after{
+            content:  '';
+            display: inline-block;
+            line-height: 1.5;
+            margin-left: 0;
+            /* margin-bottom: 20px; */
+            padding: px;
+            color: #000;
+            font-size: 20px;
+            width: 100%;
+            white-space: nowrap;
+        }
+        
+    }
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
     

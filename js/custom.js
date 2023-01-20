@@ -2,12 +2,12 @@ $(window).scroll(function() {
     // console.log($(document).scrollTop());
     if ($(document).scrollTop() > 50) {
         // $('header').removeClass('position')
-        $('nav').addClass('bg-info')
+        $('.navbar').addClass('bg-info')
         $('header').removeClass('carousel');
     } else {
-        $('nav').addClass('bg-transparent');
+        $('.navbar').addClass('bg-transparent');
         $('header').addClass('carousel');
 
-        $('nav').removeClass('bg-info');
+        $('.navbar').removeClass('bg-info');
     }
 });

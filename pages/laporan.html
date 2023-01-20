@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="../css/custom.css">
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <section id="content-profile" class="" style="background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 800px;">
@@ -82,75 +87,44 @@
           </div>
       </nav>
         <div class="text-center text-white fw-bold position-absolute top-50 start-0 translate-middle-y mx-5">
-          <h1 class="text-uppercase fw-bold">Job Fair</h1>
+          <h1 class="text-uppercase fw-bold">Laporan tracer study</h1>
         </div>
     </section>
     <div class="wrapper">
       <section class="profile my-5">
         <div class="container-fluid">
           <div class="content p-4">
-            <p>Job Fair merupakan suatu bursa kerja yang dilaksanakan secara dengan mengundang perusahaan-perusahaan dari berbagai bidang usaha bertaraf nasional maupun internasional untuk dapat secara langsung merekrut para kandidat karyawan/pegawai baik dari kalangan alumni Politeknik Negeri Jember maupun non alumni.
-                Kegiatan Job Fair di Politeknik Negeri Jember dilaksanakan secara berkala guna semakin mempererat jaringan kerjasama yang telah terjalin antara Career Development & Counseling Polije dengan perusahaan – perusahaan.
-            </p>
-            <div class="row py-3 job-fair">
-                <h4 class="fw-bold">Perusahaan</h4>
-                <div>
-                    <!-- Slider main container -->
-                    <div class="swiper" id="job-fair">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="card p-3 mb-5 bg-body" style="border-radius: 20px;">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="../img/logo1.png" class="img-fluid w-50" alt="">
-                                    </div>
-                                    <h4 class="fw-bold text-center mb-3">MIG GROUP</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card p-3 mb-5 bg-body" style="border-radius: 20px;">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="../img/logo2.png" class="img-fluid w-50" alt="">
-                                    </div>
-                                    <h4 class="fw-bold text-center mb-3">BPJS KESEHATAN</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card p-3 mb-5 bg-body" style="border-radius: 20px;">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="../img/logo3.png" class="img-fluid w-50" alt="">
-                                    </div>
-                                    <h4 class="fw-bold text-center mb-3">TRANSMART</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card p-3 mb-5 bg-body" style="border-radius: 20px;">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-center">
-                                        <img src="../img/logo4.png" class="img-fluid w-50" alt="">
-                                    </div>
-                                    <h4 class="fw-bold text-center mb-3">VDNi</h4>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        </div>
-                    
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    
+            <div class="row py-3">
+              <div class="col-md-3">
+                <h4 class="fw-bold">Laporan Tracer Study Tahun 2021</h4>
+              </div>
+              <div class="col-md-9">
+                <div id="c-isi" class="hidden d-block">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-               
-              
+                <div id="c-formulir" class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota1.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                    </div>
+                </div>
+                <div id="c-surat" class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                    </div>
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>
@@ -204,17 +178,40 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- swipper js -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="../js/custom.js"></script>
+<script src="../js/custom.js"></script> 
 <script>
-    var job = new Swiper('#job-fair',{
-        slidesPerView: 4,
-        spaceBetween: 20,
-        loop: true ,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        
-    })
+    $("#isi").click(function(){ 
+      var index = $(this).data("index");
+      console.log(index);
+      if(index == 1){
+        $('#c-isi').addClass('hidden d-block'); 
+        $('#c-formulir').removeClass(' d-block'); 
+        $('#c-surat').removeClass(' d-block'); 
+        $('#c-bimbingan').removeClass('d-block'); 
+        $('#c-publikasi').removeClass('d-block'); 
+        $('#c-pengajuan').removeClass('d-block'); 
+        $('#c-panduan').removeClass('d-block'); 
+      }
+    });
+    $("#formulir").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-formulir').addClass('d-block'); 
+      $('#c-surat').removeClass('d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-pengajuan').removeClass('d-block'); 
+      $('#c-panduan').removeClass('d-block'); 
+    });
+    $("#surat").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-formulir').removeClass('d-block'); 
+      $('#c-surat').addClass('d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-pengajuan').removeClass('d-block'); 
+      $('#c-panduan').removeClass('d-block'); 
+    });
+    
+    
 </script>
 </html>
