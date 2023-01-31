@@ -245,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="container">
+        <div class="container-fluid">
           <div align="center" class="mb-4">
             <button class="btn btn-default filter-button active" data-filter="lowongan">Lowongan</button>
             <button class="btn btn-default filter-button" data-filter="inter">Intership</button>
@@ -877,7 +877,7 @@
   $(".filter").not('.'+a).hide('3000');
   $('.filter').filter('.'+a).show('3000');
   var a = document.getElementById('button-selengkapnya');
-  a.href = base+'/lowongan';
+  a.href = base+'/lowongan.html';
 
   $(".filter-button").click(function(){
       var base = window.location.origin;
@@ -889,19 +889,19 @@
       $('button').removeClass('active');
       if(value == "lowongan"){
         var a = document.getElementById('button-selengkapnya');
-        a.href = base+'/lowongan';
+        a.href = base+'/lowongan.html';
       }else if(value == "inter"){
         var a = document.getElementById('button-selengkapnya');
-        a.href = base+'/intership';
+        a.href = base+'/intership.html';
       }else if(value == "peru"){
         var a = document.getElementById('button-selengkapnya');
-        a.href = base+'/perusahaan';
+        a.href = base+'/perusahaan.html';
       }else if(value == "pel"){
         var a = document.getElementById('button-selengkapnya');
-        a.href = base+'/pelamar';
+        a.href = base+'/pelamar.html';
       }else if(value == "alu"){
         var a = document.getElementById('button-selengkapnya');
-        a.href = base+'/alumni';
+        a.href = base+'/alumni.html';
       }
       $(this).addClass('active');
         if(value == "all")

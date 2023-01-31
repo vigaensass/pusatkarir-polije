@@ -515,6 +515,19 @@ footer ul li a{
     color: #fff;
     font-size: 18px;
 }
+.lowongan {
+    height: max-content;
+}
+.lowongan .btn-primary{
+    background-color: var(--bg-primary);
+    border: none;
+    padding: 14px 15px !important;
+}
+
+.lowongan span.deadline{
+    color: #E66F51;
+}
+
 
 @media only screen and  (max-width: 760px) {
     td, tr { display: block; }
