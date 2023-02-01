@@ -128,20 +128,8 @@ p,li{
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-/* .profile .swiper-slide.card.rounded.shadow.d-flex.align-self-center.swiper-slide-next p{
-    overflow-wrap: break-word !important;
-    line-height: 28px !important;
 }
-.profile .swiper-slide.card.rounded.shadow.d-flex.align-self-center.swiper-slide-next h4{
-    font-size: 28px;
-   
-}
-.profile .swiper-slide.card.rounded.shadow.d-flex.align-self-center.swiper-slide-next{
-    width: 400px !important;
-    height: 450px;
 
-} */
 #program-content .card{
     border-radius: 15px;
     border: none;
@@ -462,8 +450,8 @@ div .detail .detail-alamat ul{
 /* nav.pagination .page-item .page-link{
 } */
 .pagination-statistik .page-link{
-    border-radius: 100px;
-    padding: 15px 25px;
+    border-radius: 900px;
+    padding: 15px 22px;
     margin: 10px;
     font-size: 18px;
     color: #3F3D3D;
@@ -479,12 +467,13 @@ div .detail .detail-alamat ul{
 }
 .pagination-statistik .page-item a:hover.page-link{
     z-index: 3;
+    padding: 15px 22px;
     color: #fff;
     background-color: #3F3D3D;
     border-color: #3F3D3D;
 }
 .pagination-statistik .page-item:last-child .page-link{
-    border-radius: 100px;
+    border-radius: 900px;
     background-color: transparent;
     border: none;
 }
@@ -528,6 +517,26 @@ footer ul li a{
 
 
 @media only screen and  (max-width: 760px) {
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        margin:0 20px 0 20px;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu.dropdown-menu-dark{
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu a{
+        background-color: rgb(39, 38, 38);
+        margin-bottom: 10px;
+        border-radius: 2px;
+        
+    }
+    .profile .swiper-pagination{
+        display: none;
+    }
+    .artikel .card.card-left .view-all a {
+        display: none;
+    }
     td, tr { display: block; }
     /* Hide table headers (but not display: none;, for accessibility) */
     thead tr {

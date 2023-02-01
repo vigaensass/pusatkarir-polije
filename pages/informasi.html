@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="../css/custom.css">
+    <style>
+      .hidden{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <section id="content-profile" class="" style="background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 800px;">
@@ -75,7 +80,7 @@
                   <a class="nav-link" href="statistika.html">Statistik</a>
                 </li>
                 <li class="nav-item  ">
-                  <a class="nav-link btn btn-info px-4" href="#">  Login</a>
+                  <a class="nav-link btn btn-info px-4" href="login.html">  Login</a>
                 </li>
               </ul>
             </div>
@@ -89,16 +94,30 @@
       <section class="profile my-5">
         <div class="container-fluid">
           <div class="content p-4">
-            <h4 class="fw-bold">Bebas Tanggungan Mahasiswa</h4>
-            <!-- <p>Dengan menjadi anggota Career Development & Counseling Polije, rekan-rekan akan mendapatkan akses daring (online) untuk memasukkan aplikasi lamaran ke berbagai perusahaan terkemuka. Selain itu, rekan-rekan akan mendapatkan info terbaru tentang lowongan, program magang, dan berbagai kegiatan rekrutmen di kampus Politekknik Negeri Jember.</p> -->
             <div class="row py-3">
               <div class="col-md-3">
-                <button class="btn btn-outline-primary mb-3 w-100 fw-bold py-4">Standard Operating Procedure Bimbingan Konseling Mahasiswa Polije</button>
-                <button class="btn btn-outline-primary mb-3 w-100 fw-bold py-4">Formulir Bimbingan Konseling Mahasiswa Polije</button>
-                <button class="btn btn-outline-primary mb-3 w-100 fw-bold py-4">Layanan Online E-Counseling Mahasiswa Polije</button>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="informasi" data-index="1">Informasi Bebas Tanggungan Online Mahasiswa di CDC</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="surat">Surat Edaran Pendaftaran Keanggotaan IKPJ</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh7meKD2BFTjxRYxSEJVWU2BG2UFSoTFv4sZ6C-ikX5dHvCQ/closedform" class="btn btn-outline-primary text-decoration-underline mb-3 w-100 fw-bold py-4">Formulir Exit Survey Calon Lulusan Polije Tahun 2022</a>
               </div>
               <div class="col-md-9">
-                <iframe
+                <div id="c-informasi" class="hidden d-block">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                    </div>
+                </div>
+                <div id="c-surat" class="hidden">
+                    <div class="d-flex justify-content-center">
+                        <img src="../img/Bebas-Tanggungan-CDC-2023.jpg" class="img-fluid w-75 mx-auto" alt="">
+                    </div>
+                    <div class="d-flex justify-content-center mt-4">
+                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                    </div>
+                </div>
+                <!-- <iframe
                     src="http://infolab.stanford.edu/pub/papers/google.pdf#toolbar=0&navpanes=0&scrollbar=0"
                     frameBorder="0"
                     scrolling="auto"
@@ -107,7 +126,7 @@
                 ></iframe>
                 <div class="d-flex justify-content-center mt-4">
                   <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -163,4 +182,20 @@
 <!-- swipper js -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="../js/custom.js"></script>
+<script>
+  $("#informasi").click(function(){ 
+    var index = $(this).data("index");
+    console.log(index);
+    if(index == 1){
+      $('#c-informasi').addClass('hidden d-block'); 
+      $('#c-surat').removeClass('d-block'); 
+    }
+    $('#c-informasi').addClass('d-block'); 
+    $('#c-surat').removeClass('d-block'); 
+  });
+  $("#surat").click(function(){ 
+    $('#c-informasi').removeClass('d-block'); 
+    $('#c-surat').addClass('d-block'); 
+  });
+</script>
 </html>

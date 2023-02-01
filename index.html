@@ -19,10 +19,12 @@
     <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-transparent">
     <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-transparent sticky-top"> -->
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -76,7 +78,7 @@
                 <a class="nav-link" href="pages/statistika.html">Statistik</a>
               </li>
               <li class="nav-item  ">
-                <a class="nav-link btn btn-info px-4" href="#">  Login</a>
+                <a class="nav-link btn btn-info px-4" href="pages/login.html">  Login</a>
               </li>
             </ul>
           </div>
@@ -125,8 +127,8 @@
         <h4 class="fw-bold text-center" style="display: none;" data-index="3">Misi Career Development & Counseling</h4>
         <h4 class="fw-bold text-center" style="display: none;" data-index="4">Program Kerja</h4>
 
-        <div class="container-fluid my-5">
-          <div class="row p-5">
+        <div class="container-fluid mt-5">
+          <div class="row p-2">
             <div class="col-md-12">
               <!-- Slider main container -->
               <div class="swiper" id="swiper-first">
@@ -255,7 +257,7 @@
           </div>
           <div class="row" id="program-content">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3" >
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 1.png" class="img-fluid w-50" style="margin: auto;">
@@ -275,9 +277,30 @@
                 </div>
               </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3" >
+              <div class="card" >
+                <div class="card-body">
+                  <div class="d-flex justify-content-center">
+                    <img src="img/Ellipse 1.png" class="img-fluid w-50" style="margin: auto;">
+                  </div>
+                  <div class="py-3 text-center">
+                    <h4 class="fw-bold text-uppercase"> Technical Support</h4>
+                    <h5>PT Wonokoyo Jaya Corporindo</h5>
+                  </div>
+                  <span class="deadline">Deadline 21 September 2022</span>
+                  <div class="py-3">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <small>2.2001</small>
+                  </div>
+                </div>
+                <div class="card-footer py-3">
+                  <a class="btn btn-primary w-100 py-3">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
               
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body" >
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 2.png" class="img-fluid w-50" style="margin: auto;">
@@ -299,7 +322,7 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 3.png" class="img-fluid w-50" style="margin: auto;">
@@ -321,14 +344,14 @@
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter inter mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 4.png" class="img-fluid w-50" style="margin: auto;">
                   </div>
                   <div class="py-3 text-center">
                     <h4 class="fw-bold text-uppercase"> PRODUCTION SUPERVISOR</h4>
-                    <h5>PT Steel Pipe Industry Of Indonesia Tbk, Unit V Karawang Factory</h5>
+                    <h5>PT Steel Pipe Industry Of Indonesia Tbk</h5>
                   </div>
                   <span class="deadline">Deadline 21 September 2022</span>
                   <div class="py-3">
@@ -337,13 +360,13 @@
                   </div>
                 </div>
                 <div class="card-footer py-3">
-                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
+                  <a href="pages/detail-intership.html" class="btn btn-primary w-100 py-3">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter inter mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 3.png" class="img-fluid w-50" style="margin: auto;">
@@ -359,13 +382,13 @@
                   </div>
                 </div>
                 <div class="card-footer py-3">
-                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
+                  <a class="btn btn-primary w-100 py-3">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter peru mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 5.png" class="img-fluid w-50" style="margin: auto;">
@@ -381,13 +404,13 @@
                   </div>
                 </div>
                 <div class="card-footer py-3">
-                  <a class="btn btn-primary w-100 ">Selengkapnya</a>
+                  <a class="btn btn-primary w-100 py-3">Selengkapnya</a>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter alu mb-3">
-              <div class="card" style="height: 420px;">
+              <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 4.png" class="img-fluid w-50" style="margin: auto;">
@@ -403,13 +426,13 @@
                   </div>
                 </div>
                 <div class="card-footer py-3">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <button class="btn btn-primary w-100 py-3">Selengkapnya</button>
                 </div>
               </div>
             </div>
 
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter pel mb-3">
-             <div class="card" style="height: 420px;">
+             <div class="card" >
                 <div class="card-body">
                   <div class="d-flex justify-content-center">
                     <img src="img/Ellipse 6.png" class="img-fluid w-50" style="margin: auto;">
@@ -425,7 +448,7 @@
                   </div>
                 </div>
                 <div class="card-footer py-3">
-                  <button class="btn btn-primary w-100 ">Selengkapnya</button>
+                  <button class="btn btn-primary w-100 py-3">Selengkapnya</button>
                 </div>
               </div>
             </div>
@@ -475,7 +498,7 @@
             <h4 class="fw-bold">Announcement</h4>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 mb-3">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -579,13 +602,13 @@
             </div>
           </div>
           <div class="py-5 d-flex justify-content-center">
-            <button class="btn btn-outline-primary w-25">Selengkapnya</button>
+            <button class="btn btn-outline-primary w-50">Selengkapnya</button>
           </div>
           <div class="my-4">
             <h4 class="fw-bold">Schedule</h4>
           </div>
           <div class="row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 mb-3">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -689,7 +712,7 @@
             </div>
           </div>
           <div class="py-5 d-flex justify-content-center">
-            <button class="btn btn-outline-primary w-25">Selengkapnya</button>
+            <button class="btn btn-outline-primary w-50">Selengkapnya</button>
           </div>
         </div>
       </section>
@@ -755,7 +778,7 @@
           </div>
       </section>
       <section class="artikel">
-        <div class="container-fluid p-5">
+        <div class="container-fluid ">
           <div class="my-4">
             <h4 class="fw-bold">News</h4>
           </div>
@@ -774,7 +797,7 @@
                                     <h4>Kunjungan PT Adira Finance Jember ke CDC Polije</h4>
                                 </div>
                                 <div class="align-self-end text-white">
-                                    <div class="d-flex">
+                                    <div class="d-flex view-all">
                                         <a href="" class="btn btn-primary">View All</a>
                                     </div>
                                 </div>
@@ -814,7 +837,7 @@
             <!-- <div class="swiper-scrollbar"></div> -->
           </div>
           <div class="py-5 d-flex justify-content-center">
-            <button class="btn btn-outline-primary w-25">Selengkapnya</button>
+            <button class="btn btn-outline-primary w-50">Selengkapnya</button>
           </div>
           
       </div>
@@ -918,14 +941,26 @@
 
   
   var artikel = new Swiper('#artikel',{
-    slidesPerView: 2,
     spaceBetween: 50,
     loop: true ,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      }
+    },
   })
   var test = new Swiper('#swiper-gambar',{
     slidesPerView: 1,
@@ -938,13 +973,25 @@
       clickable: true,
      
     },
-
   })
   var swiper = new Swiper('#swiper-first', {
-    slidesPerView: 2,
     centeredSlides: true,
     loop: true ,
     spaceBetween: 50,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      }
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -957,6 +1004,7 @@
      
       },
     },
+   
   });
 </script>
 </html>

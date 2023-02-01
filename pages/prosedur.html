@@ -80,7 +80,7 @@
                   <a class="nav-link" href="statistika.html">Statistik</a>
                 </li>
                 <li class="nav-item  ">
-                  <a class="nav-link btn btn-info px-4" href="#">  Login</a>
+                  <a class="nav-link btn btn-info px-4" href="login.html">  Login</a>
                 </li>
               </ul>
             </div>
@@ -96,9 +96,13 @@
           <div class="content p-4">
             <div class="row py-3">
               <div class="col-md-3">
-                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="isi" data-index="1">Informasi Bebas Tanggungan Online Mahasiswa di CDC</a>
-                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="formulir">Surat Edaran Pendaftaran Keanggotaan IKPJ</a>
-                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="surat">Formulir Exit Survey Calon Lulusan Polije Tahun 2022</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdh7meKD2BFTjxRYxSEJVWU2BG2UFSoTFv4sZ6C-ikX5dHvCQ/closedform" class="btn btn-outline-primary text-decoration-underline mb-3 w-100 fw-bold py-4" id="exit" >Isi Exit Survey Bebas Tanggungan Mahasiswa</a>
+                <a href="https://docs.google.com/document/d/1Nus9mb-5wuivo5adMpyOTkJR89YbOIMO/edit" class="btn btn-outline-primary text-decoration-underline mb-3 w-100 fw-bold py-4" id="exit" >Formulir Bagi Perusahaan</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="isi" data-index="1">Surat Edaran Keanggotaan IKAPJ</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="bimbingan">Alur Bimbingan Konseling</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="publikasi">Alur Publikasi Lowongan </a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="pengajuan">Alur Pengajuan Lamaran</a>
+                <a class="btn btn-outline-primary mb-3 w-100 fw-bold py-4" id="panduan">Panduan LinkedIn</a>
               </div>
               <div class="col-md-9">
                 <div id="c-isi" class="hidden d-block">
@@ -109,22 +113,46 @@
                       <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-                <div id="c-formulir" class="hidden">
+                <div id="c-bimbingan" class="hidden">
+                  <iframe
+                      src="../pdf/1-SOP Bimbingan Konseling Mahasiswa.pdf"
+                      frameBorder="0"
+                      scrolling="auto"
+                      height="900px"
+                      width="100%"
+                  ></iframe>
+                  <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                  </div>
+                </div>
+                <div id="c-publikasi" class="hidden">
                     <div class="d-flex justify-content-center">
-                        <img src="../img/anggota1.png" class="img-fluid w-75 mx-auto" alt="">
+                        <img src="../img/Alur Lowongan-Perusahaan.png" class="img-fluid w-75 mx-auto" alt="">
                     </div>
                     <div class="d-flex justify-content-center mt-4">
                       <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
                     </div>
                 </div>
-                <div id="c-surat" class="hidden">
-                    <div class="d-flex justify-content-center">
-                        <img src="../img/anggota.png" class="img-fluid w-75 mx-auto" alt="">
-                    </div>
-                    <div class="d-flex justify-content-center mt-4">
-                      <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
-                    </div>
-                </div>
+                <div id="c-pengajuan" class="hidden">
+                  <div class="d-flex justify-content-center">
+                      <img src="../img/Alur Register Kandidat Pelamar.png" class="img-fluid w-75 mx-auto" alt="">
+                  </div>
+                  <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                  </div>
+              </div>
+              <div id="c-panduan" class="hidden">
+                  <iframe
+                      src="../img/Buku Panduan Pelatihan LinkedIn Polije.pdf"
+                      frameBorder="0"
+                      scrolling="auto"
+                      height="900px"
+                      width="100%"
+                  ></iframe>
+                  <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-warning px-5"><i class="fa fa-download" aria-hidden="true"></i> Unduh</button>
+                  </div>
+              </div>
                 
               </div>
             </div>
@@ -184,35 +212,43 @@
 <script>
     $("#isi").click(function(){ 
       var index = $(this).data("index");
-      console.log(index);
       if(index == 1){
         $('#c-isi').addClass('hidden d-block'); 
-        $('#c-formulir').removeClass(' d-block'); 
-        $('#c-surat').removeClass(' d-block'); 
-        $('#c-bimbingan').removeClass('d-block'); 
-        $('#c-publikasi').removeClass('d-block'); 
+        $('#c-bimbingan').removeClass(' d-block'); 
+        $('#c-publikasi').removeClass(' d-block'); 
         $('#c-pengajuan').removeClass('d-block'); 
         $('#c-panduan').removeClass('d-block'); 
       }
     });
-    $("#formulir").click(function(){ 
+    $("#bimbingan").click(function(){ 
       $('#c-isi').removeClass('d-block'); 
-      $('#c-formulir').addClass('d-block'); 
-      $('#c-surat').removeClass('d-block'); 
-      $('#c-bimbingan').removeClass('d-block'); 
-      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-bimbingan').addClass('d-block'); 
+      $('#c-publikasi').removeClass(' d-block'); 
       $('#c-pengajuan').removeClass('d-block'); 
       $('#c-panduan').removeClass('d-block'); 
     });
-    $("#surat").click(function(){ 
+    $("#publikasi").click(function(){ 
       $('#c-isi').removeClass('d-block'); 
-      $('#c-formulir').removeClass('d-block'); 
-      $('#c-surat').addClass('d-block'); 
-      $('#c-bimbingan').removeClass('d-block'); 
-      $('#c-publikasi').removeClass('d-block'); 
+      $('#c-publikasi').addClass('d-block'); 
+      $('#c-bimbingan').removeClass(' d-block'); 
       $('#c-pengajuan').removeClass('d-block'); 
       $('#c-panduan').removeClass('d-block'); 
     });
+    $("#pengajuan").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-pengajuan').addClass('d-block'); 
+      $('#c-publikasi').removeClass(' d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+      $('#c-panduan').removeClass('d-block'); 
+    });
+    $("#panduan").click(function(){ 
+      $('#c-isi').removeClass('d-block'); 
+      $('#c-panduan').addClass('d-block'); 
+      $('#c-publikasi').removeClass(' d-block'); 
+      $('#c-pengajuan').removeClass('d-block'); 
+      $('#c-bimbingan').removeClass('d-block'); 
+    });
+   
     
     
 </script>
