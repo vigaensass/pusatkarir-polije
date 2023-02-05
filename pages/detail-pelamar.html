@@ -17,10 +17,12 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-info sticky-top">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<div class="d-flex justify-content-between">
+            <a class="navbar-brand" href="#"><img src="../img/logo.png" alt="" class="img-fluid w-50 mx-auto d-block"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -84,12 +86,12 @@
     <div class="wrapper">
         <section class="detail my-5">
             <div class="container-fluid">
-                <div class="content p-5">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img src="https://dompetsosial.id/assets/images/mitra/9.jpg" class="rounded mx-auto d-block" alt="..." style="width: 22rem;">
+                <div class="content p-3">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4 ">
+                            <img src="../img/foto.png" class="rounded d-block img-fluid mx-auto" alt="..." style="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 align-self-center">
                             <div class="card shadow rounded-3">
                                 <div class="card-body p-2">
                                     <table class="table table-borderless">
@@ -131,38 +133,41 @@
                         </div>
                         <br>
                         <div class="col-md-12 mt-xl-5">
-                            <div class="mb-4">
-                                <i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 40px;"></i><span class="mx-4 fs-5 fw-normal"><strong>Riwayat Pendidikan</strong></span>
+                            <div class="my-4">
+                                <div class="d-flex">
+                                    <i class="fa fa-graduation-cap mx-2" aria-hidden="true" style="font-size: 40px;"></i>
+                                    <span class="ml-4 fs-5 fw-normal align-self-center"><strong>Riwayat Pendidikan</strong></span>
+                                </div>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class="table-secondary">
                                         <tr>
-                                            <th scope="col">Nama Sekolah</th>
-                                            <th scope="col">Jenjang</th>
-                                            <th scope="col">Tahun Lulus</th>
+                                            <th scope="col" data-label="Nama Sekolah">Nama Sekolah</th>
+                                            <th scope="col" data-label="Jenjang">Jenjang</th>
+                                            <th scope="col" data-label="Tahun Lulus">Tahun Lulus</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-light">
                                         <tr>
-                                            <td>SD Negeri Lampeji 1</td>
-                                            <td>SD / Sederajat</td>
-                                            <td>2006</td>
+                                            <td data-label="Nama Sekolah">SD Negeri Lampeji 1</td>
+                                            <td data-label="Jenjang">SD / Sederajat</td>
+                                            <td data-label="Tahun Lulus">2006</td>
                                         </tr>
                                         <tr>
-                                            <td>SMP Negeri 1 Mumbulsari</td>
-                                            <td>SMP / Sederajat</td>
-                                            <td>2010</td>
+                                            <td data-label="Nama Sekolah">SMP Negeri 1 Mumbulsari</td>
+                                            <td data-label="Jenjang">SMP / Sederajat</td>
+                                            <td data-label="Tahun Lulus">2010</td>
                                         </tr>
                                         <tr>
-                                            <td>SMA Islam Mayang</td>
-                                            <td>SMA / Sederajat</td>
-                                            <td>2013</td>
+                                            <td data-label="Nama Sekolah">SMA Islam Mayang</td>
+                                            <td data-label="Jenjang">SMA / Sederajat</td>
+                                            <td data-label="Tahun Lulus">2013</td>
                                         </tr>
                                         <tr>
-                                            <td>Politeknik Negeri Jember</td>
-                                            <td>D3</td>
-                                            <td>2019</td>
+                                            <td data-label="Nama Sekolah">Politeknik Negeri Jember</td>
+                                            <td data-label="Jenjang">D3</td>
+                                            <td data-label="Tahun Lulus">2019</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -170,33 +175,36 @@
                         </div>
                         <br>
                         <div class="col-md-12 mt-xl-5">
-                            <div class="mb-4">
-                                <i class="fa fa-building" aria-hidden="true" style="font-size: 40px;"></i><span class="mx-4 fs-5 fw-normal"><strong>Pengalaman Kerja</strong></span>
+                            <div class="my-4">
+                                <div class="d-flex">
+                                    <i class="fa fa-building mx-2" aria-hidden="true" style="font-size: 40px;"></i>
+                                    <span class="mx-4 fs-5 fw-normal align-self-center"><strong>Pengalaman Kerja</strong></span>
+                                </div>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class="table-secondary">
                                         <tr>
-                                            <th scope="col">Nama Sekolah</th>
-                                            <th scope="col">Jenjang</th>
-                                            <th scope="col">Tahun Lulus</th>
+                                            <th scope="col" data-label="Pengalaman Kerja">Pengalaman Kerja</th>
+                                            <th scope="col" data-label="Jabatan">Jabatan</th>
+                                            <th scope="col" data-label="Tahun Lulus">Tahun Lulus</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-light">
                                         <tr>
-                                            <td>Kantor Desa Lampeji</td>
-                                            <td>Staf Administrasi Pilkades 2019</td>
-                                            <td>2019</td>
+                                            <td data-label="Pengalaman Kerja">Kantor Desa Lampeji</td>
+                                            <td data-label="Jabatan">Staf Administrasi Pilkades 2019</td>
+                                            <td data-label="Tahun Lulus">2019</td>
                                         </tr>
                                         <tr>
-                                            <td>Kantor Desa Lampeji</td>
-                                            <td>Kader Perberdayaan Manusia</td>
-                                            <td>2020</td>
+                                            <td data-label="Pengalaman Kerja">Kantor Desa Lampeji</td>
+                                            <td data-label="Jabatan">Kader Perberdayaan Manusia</td>
+                                            <td data-label="Tahun Lulus">2020</td>
                                         </tr>
                                         <tr>
-                                            <td>SMK Al-Ishlah Mayang</td>
-                                            <td>Guru</td>
-                                            <td>2020</td>
+                                            <td data-label="Pengalaman Kerja">SMK Al-Ishlah Mayang</td>
+                                            <td data-label="Jabatan">Guru</td>
+                                            <td data-label="Tahun Lulus">2020</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -204,62 +212,73 @@
                         </div>
                         <div class="col-md-12 mt-xl-5">
                             <div class="mb-4">
-                                <i class="fa fa-sitemap" aria-hidden="true" style="font-size: 40px;"></i><span class="mx-4 fs-5 fw-normal"><strong>Pengalaman Organisasi</strong></span>
+                                <div class="d-flex">
+                                    <i class="fa fa-sitemap mx-2" aria-hidden="true" style="font-size: 40px;"></i>
+                                    <span class="mx-4 fs-5 fw-normal align-self-center"><strong>Pengalaman Organisasi</strong></span>
+                                </div>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead class="table-secondary">
                                         <tr>
-                                            <th scope="col">Nama Sekolah</th>
-                                            <th scope="col">Jenjang</th>
-                                            <th scope="col">Tahun Lulus</th>
+                                            <th scope="col" data-label="Pengalaman Organisasi">Pengalaman Organisasi</th>
+                                            <th scope="col" data-label="Jabatan">Jabatan</th>
+                                            <th scope="col" data-label="Tahun Lulus">Tahun Lulus</th>
                                         </tr>
                                     </thead>
                                     <tbody class="table-light">
                                         <tr>
-                                            <td>OSIS SMA ISLAM MAYANG</td>
-                                            <td>Bendahara</td>
-                                            <td>2010</td>
+                                            <td data-label="Pengalaman Organisasi">OSIS SMA ISLAM MAYANG</td>
+                                            <td data-label="Jabatan">Bendahara</td>
+                                            <td data-label="Tahun Lulus">2010</td>
                                         </tr>
                                         <tr>
-                                            <td>OSIS SMA ISLAM MAYANG</td>
-                                            <td>Sekretaris</td>
-                                            <td>2011</td>
+                                            <td data-label="Pengalaman Organisasi">OSIS SMA ISLAM MAYANG</td>
+                                            <td data-label="Jabatan">Sekretaris</td>
+                                            <td data-label="Tahun Lulus">2011</td>
                                         </tr>
                                         <tr>
-                                            <td>PIK-R SMA ISLAM MAYANG</td>
-                                            <td>Sekretaris</td>
-                                            <td>2012</td>
+                                            <td data-label="Pengalaman Organisasi">PIK-R SMA ISLAM MAYANG</td>
+                                            <td data-label="Jabatan">Sekretaris</td>
+                                            <td data-label="Tahun Lulus">2012</td>
                                         </tr>
                                         <tr>
-                                            <td>Karang Taruna Desa Lampeji</td>
-                                            <td>Sekretaris</td>
-                                            <td>2014</td>
+                                            <td data-label="Pengalaman Organisasi">Karang Taruna Desa Lampeji</td>
+                                            <td data-label="Jabatan">Sekretaris</td>
+                                            <td data-label="Tahun Lulus">2014</td>
                                         </tr>
                                         <tr>
-                                            <td>PIK-R Desa Lampeji Kec. Mumbulsari Kab. Jember</td>
-                                            <td>Pengurus</td>
-                                            <td>2016</td>
+                                            <td data-label="Pengalaman Organisasi">PIK-R Desa Lampeji Kec. Mumbulsari Kab. Jember</td>
+                                            <td data-label="Jabatan">Pengurus</td>
+                                            <td data-label="Tahun Lulus">2016</td>
                                         </tr>
                                         <tr>
-                                            <td>Remaja Masjid Al-Falah Lampeji</td>
-                                            <td>Sekretaris</td>
-                                            <td>2019</td>
+                                            <td data-label="Pengalaman Organisasi">Remaja Masjid Al-Falah Lampeji</td>
+                                            <td data-label="Jabatan">Sekretaris</td>
+                                            <td data-label="Tahun Lulus">2019</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
                         <div class="col-md-12 mt-xl-5">
-                            <div class="mb-4">
-                                <i class="fa fa-bar-chart" aria-hidden="true" style="font-size: 40px;"></i><span class="mx-4 fs-5 fw-normal"><strong>Skill / Kemampuan</strong></span>
+                            <div class="my-4">
+                                <div class="d-flex">
+                                    <i class="fa fa-bar-chart mx-2" aria-hidden="true" style="font-size: 40px;"></i>
+                                    <span class="mx-4 fs-5 fw-normal align-self-center"><strong>Skill / Kemampuan</strong></span>
+                                </div>
                             </div>
                             <div class="table-responsive">
-                                <table class="table">
+                                <table class="table table-light" id="test-table">
+                                    <!-- <thead>
+                                        <tr>
+                                            <th rowspan="2" data-label="Microsoft Office">Microsoft office</th>
+                                        </tr>
+                                    </thead> -->
                                     <tbody class="table-light">
                                         <tr>
-                                            <td>Microsoft office</td>
-                                            <td>
+                                            <th >Microsoft office</th>
+                                            <td data-label="Microsoft Office">
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
@@ -268,16 +287,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Pemrograman</td>
-                                            <td>
+                                            <th >Pemrograman</th>
+                                            <td data-label="Pemrograman">
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Desain Photoshop</td>
-                                            <td>
+                                            <th>Desain Photoshop</th>
+                                            <td data-label="Desain Photoshop">
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
@@ -286,16 +305,16 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Desain Corel Draw</td>
-                                            <td>
+                                            <th>Desain Corel Draw</th>
+                                            <td data-label="Desain Corel Draw">
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td>Sistem Administrasi</td>
-                                            <td>
+                                            <th>Sistem Administrasi</th>
+                                            <td data-label="Sistem Administrasi">
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
                                                 <i class="fa fa-star" aria-hidden="true" style="color: yellow;"></i>
@@ -340,7 +359,7 @@
             <div class="col-md-4">
               <h5 class="fw-bold mb-3">Our Location</h5>
               <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="rounded embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.4546105100794!2d113.720981!3d-8.1568678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b6c06feea7%3A0x8014dc75ef0320b7!2sGedung%20Pasca%20Sarjana%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1672764502748!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe width="100%" class="rounded embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3949.4546105100794!2d113.720981!3d-8.1568678!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b6c06feea7%3A0x8014dc75ef0320b7!2sGedung%20Pasca%20Sarjana%20Politeknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1672764502748!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
               
             </div>
@@ -358,4 +377,6 @@
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
 </html>

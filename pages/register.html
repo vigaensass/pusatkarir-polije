@@ -20,7 +20,7 @@
             <div class="container-fluid">
                 <div class="row d-flex justify-content-end">
                     <div class="col-md-5 h-100 p-0">
-                        <div class="card text-dark" style="opacity: 0.7; border: 0; height: auto;">
+                        <div class="card text-dark">
                             <div class="card-body m-5">
                                 <div class="text-center p-2 mb-5">
                                     <img src="../img/logo-polije.jpg" alt="" style="width: 30rem;">
@@ -33,7 +33,7 @@
                                     </div>
                                     <form class="mt-4">
                                         <div class="form-group">
-                                            <select class="form-select" aria-label="Default select example">
+                                            <select class="form-select " aria-label="Default select example">
                                                 <option selected>Register As</option>
                                                 <option value="1">Alumni / Mahasiswa Polije</option>
                                                 <option value="2">Non Alumni Polije</option>
@@ -134,16 +134,62 @@
                                             <input type="confirm-password" class="form-control rounded-3" placeholder="Confirm Password" id="exampleInputPassword1">
                                         </div>
                                         <div class="d-flex justify-content-between">
-                                            <div class="form-group mt-3">
-                                                <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                            </div>
-                                            <div class="form-group mt-3">
-                                                <input class="form-control form-control-lg" id="formFileLg" type="file">
-                                            </div>
+                                            <div class="item-inner mt-3">
+                                                <div class="item-content">
+                                                    <div class="image-upload">
+                                                      <label style="cursor: pointer;" for="file_upload">
+                        
+                                                        <img src="" alt="" class="uploaded-image">
+                        
+                                                        <div class="h-50">
+                                                               <div class="dplay-tbl">
+                                                                <div class="dplay-tbl-cell">
+                                                                    <div class="d-flex">
+                                                                        <i class="fa fa-folder mx-2" aria-hidden="true"></i>
+                                                                        <h5 class="align-self-center m-0"><b>Browser</b></h5>
+                                                                    </div>
+                                                                    <h6 class="mt-10 mb-70">Upload KTM / Ijazah</h6>
+                        
+                                  
+                                                                </div>
+                                                            </div>
+                                                        </div><!--upload-content-->
+                                                        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+                                                        
+                                                         </label>
+                                                    </div>
+                                                </div><!--item-content-->
+                                            </div><!--item-inner-->
+                                            <div class="item-inner mt-3">
+                                                <div class="item-content">
+                                                    <div class="image-upload">
+                                                      <label style="cursor: pointer;" for="file_upload">
+                        
+                                                        <img src="" alt="" class="uploaded-image">
+                        
+                                                        <div class="h-50">
+                                                               <div class="dplay-tbl">
+                                                                <div class="dplay-tbl-cell">
+                                                                    <div class="d-flex">
+                                                                        <i class="fa fa-folder mx-2" aria-hidden="true"></i>
+                                                                        <h5 class="align-self-center m-0"><b>Browser</b></h5>
+                                                                    </div>
+                                                                    <h6 class="mt-10 mb-70">Upload Foto</h6>
+                        
+                                  
+                                                                </div>
+                                                            </div>
+                                                        </div><!--upload-content-->
+                                                        <input data-required="image" type="file" name="image_name" id="file_upload" class="image-input" data-traget-resolution="image_resolution" value="">
+                                                        
+                                                         </label>
+                                                    </div>
+                                                </div><!--item-content-->
+                                            </div><!--item-inner-->
                                         </div>
                                         <p><small>File jpg/jpeg/pdf Maximum file size: 2MB</small></p>
                                         <div class="mt-5">
-                                            <button type="submit" class="btn btn-primary rounded-3" style="width: 100%; background-color: #264653; color: white;">Submit</button>
+                                            <button type="submit" class="btn btn-primary rounded-3" style="width: 100%; background-color: #264653; color: white; border: none;">Submit</button>
                                         </div>
                                     </form>
                                 </div>
