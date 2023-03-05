@@ -17,7 +17,9 @@ body {
     --bg-primary: #264653;
     --swiper-navigation-size: 1rem !important;
 }
-
+.text-white{
+    color: #F1F1F1 !important;
+}
 .btn-success{
     background-color: #00880D;
     color: #fff;
@@ -141,9 +143,10 @@ p,li{
 #program-content .card{
     border-radius: 15px;
     border: none;
+    background-color: #FBFDF7;
 }
 #program-content .card-footer{
-    background-color: #F1F1F1;
+    background-color: #FBFDF7;
     border: none;
 }
 #program-content .card-footer .btn-primary{
@@ -533,15 +536,15 @@ div .detail .detail-alamat ul{
     border-radius: 12px !important;
 }
 #table-responce-rate table tr{
-    background-color: #363636 !important;
-    color: #fff;
+    background-color: #fff !important;
+    color: #000;
 }
 #table-responce-rate table thead tr th{
     padding: 20px;
 }
 footer .footer{
     height: max-content;
-    background-color: var(--bg-primary);
+    background-color: #1E2833;
 }
 footer .footer-copyright {
     height: max-content;
@@ -625,7 +628,7 @@ footer ul li a{
     padding: 30px ;
 }
 .image-upload {
-    width: 320px;
+    width: 100%;
     height: 120px;
     border: 1px dashed #ddd;
     border-radius: 5px;
@@ -679,12 +682,17 @@ footer ul li a{
     height: 43px;
     line-height: 43px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 12px;
     margin-bottom: 20px;
 }
 
 
-
+#content-login .card .card-body img{
+    width: 30rem;
+}
+#content-login .card .card-body .test{
+    padding: 48px;
+}
 @media only screen and  (max-width: 760px) {
 
     .navbar-expand-lg .navbar-nav .dropdown-menu{
@@ -770,8 +778,67 @@ footer ul li a{
         color: red !important;
     }
     
-        
+    #alumni-detail td, #alumni-detail tr { display: block; }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #alumni-detail thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
     }
+    #alumni-detail tr { border: 1px solid #fff; padding: 0; }
+    #alumni-detail th { border: 1px solid #fff; padding-bottom: 0; }
+    #alumni-detail tr + #alumni-detail tr { margin-top: 1.5em; }
+    #alumni-detail td {
+      /* make like a "row" */
+      border: none;
+      /* border-bottom: 2px solid #000 !important; */
+      position: relative;
+      background-color: #FBFDF7 !important;
+      color: red;
+      padding: 5 !important;
+      text-align: left;
+      font-size: 20px;
+      
+    }
+    #alumni-detail td:before {
+        content: attr(data-label) ' :';
+        display: inline-block;
+        line-height: 1.5;
+        margin-left: 0;
+        margin-bottom: 20px;
+        background-color: #D9D9D9;
+        padding: 10px;
+        color: #000;
+        font-size: 20px;
+        width: 100%;
+        white-space: nowrap;
+        }
+    #alumni-detail td::after{
+        content:  '';
+        display: inline-block;
+        line-height: 1.5;
+        margin-left: 0;
+        /* margin-bottom: 20px; */
+        padding: px;
+        color: #000;
+        font-size: 20px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    #content-login .card{
+        margin: 40px;
+    }
+    #content-login .card .card-body img{
+        width: 400px;
+    }
+    #content-login .card .card-body{
+        margin: 0;
+        padding: 0;
+    }
+    #content-login .card .card-body .test{
+        padding: 0;
+    }
+}
     
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 

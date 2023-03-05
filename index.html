@@ -143,7 +143,7 @@
                         </div>
                       </div>
                   </div>
-                  <div class="swiper-slide card rounded d-flex align-self-center" style="background-color: #7CCC6C;filter: drop-shadow(0px 0px 40px rgba(124, 204, 108, 0.5)); !important">
+                  <div class="swiper-slide card rounded d-flex align-self-center" style="background-color: #7CCC6C;filter: drop-shadow(0px 0px 40px rgba(124, 204, 108, 0.5)) !important">
                       <div class="card-body p-4 d-flex align-items-center">
                         <div class=" mb-3 headed-judul">
                           <h4 class="fw-bold text-center">Tujuan</h4>
@@ -256,7 +256,7 @@
             <button class="btn btn-default filter-button" data-filter="pel">Pelamar<hr></button>
             <button class="btn btn-default filter-button" data-filter="alu">Alumni<hr></button>
           </div>
-          <div class="row mx-5" id="program-content">
+          <div class="row mx-2" id="program-content">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 filter lowongan mb-3 d-flex align-items-stretch" >
               <div class="card w-100 shadow px-4 pb-4" style="height: 500px;">
                 <div class="card-body">
@@ -916,6 +916,20 @@
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
     },
     pagination: {
       el: ".swiper-pagination",
