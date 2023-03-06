@@ -219,7 +219,7 @@ p,li{
   transform: scale(1);
   /* height: 695px !important; */
   /* background: #fc0; */
-  height: 75vh !important;
+  height: 76vh !important;
 }
 
 .profile .swiper-slide__content {
@@ -837,6 +837,29 @@ footer ul li a{
     }
     #content-login .card .card-body .test{
         padding: 0;
+    }
+    .profile .swiper {
+        position:relative;
+        width: 90vw;
+        height: max-content;
+    }
+    .profile .swiper-slide {
+        height: 650px;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        transition:all 200ms linear;
+        transform: scale(0.8);
+    }
+
+    .profile .swiper-slide-active{
+        transform: scale(1);
+        height: 100% !important;
+        padding-top: 40px;
+    }
+
+    .profile .swiper-slide__content {
+    height: 300px;
     }
 }
     
