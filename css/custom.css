@@ -10,8 +10,6 @@ body {
     background-color: #101820;
 
 }
-
-
 :root{
     --bg-color: #101820;
     --bg-primary: #264653;
@@ -98,6 +96,11 @@ header.carousel{
     transition:  1s;
     transition-timing-function: ease-in;
 }
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+    "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
 /* navbar */
 .dropdown-toggle::after{
     display: none !important;
@@ -106,7 +109,7 @@ header.carousel{
     margin-top: 20px;
     color: #F1F1F1;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 500px;
     padding: 10px 10px;
     margin: 10px 20px 0 20px;
 
@@ -118,12 +121,16 @@ header.carousel{
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-   color: #F1F1F1 !important;
+   /* color: #F1F1F1 !important; */
    margin-top: 10px;
    font-weight: bold;
-   background:#264653;
+   /* background:#264653; */
+   color: #00880D !important;
    padding: 10px 10px;
    border-radius: 5px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #F1F1F1 ;
 }
 
 
@@ -693,6 +700,19 @@ footer ul li a{
 #content-login .card .card-body .test{
     padding: 48px;
 }
+tr th.text-header{
+    width: 200px;
+}
+tr th.text-satu{
+    width: 100px;
+}
+tr th.text-dua{
+    width: 300px;
+}
+tr th.text-bold{
+    font-weight: 300;
+
+}
 @media only screen and  (max-width: 760px) {
 
     .navbar-expand-lg .navbar-nav .dropdown-menu{
@@ -702,11 +722,18 @@ footer ul li a{
         background-color: transparent;
         border: none;
     }
+    .navbar-light .navbar-nav .nav-link{
+        color: #F1F1F1;
+    }
     .navbar-expand-lg .navbar-nav .dropdown-menu a{
-        background-color: rgb(39, 38, 38);
+        /* background-color: rgb(39, 38, 38); */
         margin-bottom: 10px;
         border-radius: 2px;
+        margin-left: 10px;
         
+    }
+    .navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+        color: #00880D;
     }
     .profile .swiper-pagination{
         display: none;
@@ -721,12 +748,21 @@ footer ul li a{
       top: -9999px;
       left: -9999px;
     }
-    tr { border: 1px solid #000; }
+    tr th.text-header{
+        width: 200px;
+    }
+    tr th.text-bold{
+        font-weight: 500px;
+    }
+    tr th.text-dua{
+        width: 500px;
+    }
+    /* tr { border: 1px solid #000; } */
     tr + tr { margin-top: 1.5em; }
     td {
       /* make like a "row" */
       border: none;
-      border-bottom: 2px solid #000;
+      border-bottom: 2px solid #fff;
       position: relative;
       background-color: #FBFDF7 !important;
       color: #000;
