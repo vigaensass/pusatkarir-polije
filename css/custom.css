@@ -114,11 +114,7 @@ header.carousel{
     margin: 10px 20px 0 20px;
 
 }
-.navbar-light .navbar-nav .nav-link.btn-info{
-    background-color: #264653;
-    color: #F1F1F1;
-    border: none;
-}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
    /* color: #F1F1F1 !important; */
@@ -713,8 +709,38 @@ tr th.text-bold{
     font-weight: 300;
 
 }
+#content-profile{
+    background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 650px;
+}
+#content-profile #judul{
+    top:30%;
+}
+.navbar-light .navbar-nav .nav-link.btn-info{
+    background-color: transparent;
+    color: #F1F1F1;
+    border: none;
+}
 @media only screen and  (max-width: 760px) {
-
+    .navbar-light .navbar-nav .nav-link.btn-info{
+        background-color: #264653;
+        color: #F1F1F1;
+        border: none;
+    }
+    #laporan-tracer{
+        display: none;
+    }
+    #content-profile{
+        background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 200px;
+    }
+    #content-profile #judul{
+        font-size: 40px;
+    }
+    #content-profile #judul{
+        top:15%;
+    }
+    .navbar-expand-lg#test-navbar{
+        background-color: var(--bg-color) !important;
+    }
     .navbar-expand-lg .navbar-nav .dropdown-menu{
         margin:0 20px 0 20px;
     }
@@ -863,9 +889,10 @@ tr th.text-bold{
     }
     #content-login .card{
         margin: 40px;
+        border-radius: 20px;
     }
     #content-login .card .card-body img{
-        width: 400px;
+        width: 250px;
     }
     #content-login .card .card-body{
         margin: 0;
@@ -895,7 +922,13 @@ tr th.text-bold{
     }
 
     .profile .swiper-slide__content {
-    height: 300px;
+        height: 300px;
+    }
+    .carausel-gambar .swiper-button-next, .carausel-gambar .swiper-button-prev{
+        display: none;
+    }
+    .artikel .swiper-button-next, .artikel .swiper-button-prev {
+        display: none;
     }
 }
     
