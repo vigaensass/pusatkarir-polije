@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <!-- custom css -->
     <link rel="stylesheet" href="../css/custom.css">
+    <style>
+      
+    </style>
 </head>
 <body>
     <section id="content-profile">
@@ -144,9 +147,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                      
                     </div>
                 </div>
                
@@ -207,15 +208,15 @@
 <script src="../js/custom.js"></script>
 <script>
   var artikel = new Swiper('#artikel',{
-    spaceBetween: 50,
-    loop: true ,
+    spaceBetween: 10,
+    loop: false ,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       640: {
-        slidesPerView: 1,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       768: {

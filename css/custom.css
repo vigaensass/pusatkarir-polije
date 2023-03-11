@@ -731,7 +731,24 @@ tr th.text-bold{
     color: #F1F1F1;
     font-weight: 500px;
 }
+tr th.text-dua{
+    font-weight: normal;
+}
 @media only screen and  (max-width: 760px) {
+    h1#text-center-content{
+        text-align: center;
+    }
+    .detail-intership .swiper-slide {
+        width: 80% !important;
+    }
+
+    .detail-intership .swiper-slide:nth-child(2n) {
+        width: 80% !important;
+    }
+
+    .detail-intership .swiper-slide:nth-child(3n) {
+        width: 80% !important;
+    }
     .navbar-light .navbar-nav .nav-link.btn-info{
         background-color: #264653;
         color: #F1F1F1;
@@ -767,6 +784,7 @@ tr th.text-bold{
         margin-bottom: 10px;
         border-radius: 2px;
         margin-left: 10px;
+        color: #f1f1f1;
         
     }
     .navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
@@ -793,6 +811,8 @@ tr th.text-bold{
     }
     tr th.text-dua{
         width: 500px;
+        font-weight: bold;
+
     }
     /* tr { border: 1px solid #000; } */
     tr + tr { margin-top: 1.5em; }
