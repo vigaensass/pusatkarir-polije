@@ -144,7 +144,6 @@ p,li{
 }
 
 #program-content .card{
-    border-radius: 15px;
     border: none;
     background-color: #FBFDF7;
 }
@@ -735,8 +734,15 @@ tr th.text-dua{
     font-weight: normal;
 }
 @media only screen and  (max-width: 760px) {
+    #galeri img{
+        height: 200px;
+        border-radius: 12px;
+    }
     h1#text-center-content{
         text-align: center;
+    }
+    .detail-intership .swiper-slide h4{
+        font-size: 20px;
     }
     .detail-intership .swiper-slide {
         width: 80% !important;
@@ -758,7 +764,7 @@ tr th.text-dua{
         display: none;
     }
     #content-profile{
-        background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 200px;
+        background-image: url(../img/bg-2.png);background-position:center;background-size:cover; border:none; height: 245px;
     }
     #content-profile #judul{
         font-size: 40px;
