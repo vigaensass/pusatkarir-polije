@@ -733,7 +733,44 @@ tr th.text-bold{
 tr th.text-dua{
     font-weight: normal;
 }
+.test-padding{
+    padding: 20px;
+}
+.text-satu{
+    padding: 20px;
+}
+.text-mahasiswa .text-header{
+    width: 25%;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.text-mahasiswa .text-content{
+    width: max-content;
+    padding: 0;
+    margin-bottom: 20px;
+
+}   
+
 @media only screen and  (max-width: 760px) {
+    .text-mahasiswa .text-header{
+        width: 200px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .text-mahasiswa .text-content{
+        width: 200px;
+        padding: 0;
+        margin-bottom: 20px;
+        font-weight: bold;
+
+    }
+    .table>:not(caption)>*>*{
+        padding: 0;
+    }
+    .artikel .card img{
+        height: 400px;
+    }
     #galeri img{
         height: 200px;
         border-radius: 12px;
@@ -810,18 +847,19 @@ tr th.text-dua{
       left: -9999px;
     }
     tr th.text-header{
-        width: 200px;
+        width: 200px !important;  float: none;
+        padding: 0;
     }
     tr th.text-bold{
         font-weight: 500px;
     }
     tr th.text-dua{
-        width: 500px;
+        /* width: 500px; */
         font-weight: bold;
 
     }
     /* tr { border: 1px solid #000; } */
-    tr + tr { margin-top: 1.5em; }
+    /* tr + tr { margin-top: 1.5em; } */
     td {
       /* make like a "row" */
       border: none;
@@ -835,7 +873,7 @@ tr th.text-dua{
       
     }
     td:before {
-        content: attr(data-label) ' :';
+        content: attr(data-label) ' ';
         display: inline-block;
         line-height: 1.5;
         margin-left: 0;
@@ -845,17 +883,21 @@ tr th.text-dua{
         color: #000;
         font-size: 20px;
         width: 100%;
+        font-weight: bold;
         white-space: nowrap;
         }
+    .test-padding{
+        padding: 0 !important;
+    }
     td::after{
         content:  '';
         display: inline-block;
         line-height: 1.5;
         margin-left: 0;
         /* margin-bottom: 20px; */
-        padding: px;
         color: #000;
         font-size: 20px;
+        padding: 10px;
         width: 100%;
         white-space: nowrap;
     }
@@ -874,7 +916,6 @@ tr th.text-dua{
         }
     #test-table tr th{
         display: none;
-        color: red !important;
     }
     
     #alumni-detail td, #alumni-detail tr { display: block; }
@@ -886,44 +927,8 @@ tr th.text-dua{
     }
     #alumni-detail tr { border: 1px solid #fff; padding: 0; }
     #alumni-detail th { border: 1px solid #fff; padding-bottom: 0; }
-    #alumni-detail tr + #alumni-detail tr { margin-top: 1.5em; }
-    #alumni-detail td {
-      /* make like a "row" */
-      border: none;
-      /* border-bottom: 2px solid #000 !important; */
-      position: relative;
-      background-color: #FBFDF7 !important;
-      color: red;
-      padding: 5 !important;
-      text-align: left;
-      font-size: 20px;
-      
-    }
-    #alumni-detail td:before {
-        content: attr(data-label) ' :';
-        display: inline-block;
-        line-height: 1.5;
-        margin-left: 0;
-        margin-bottom: 20px;
-        background-color: #D9D9D9;
-        padding: 10px;
-        color: #000;
-        font-size: 20px;
-        width: 100%;
-        white-space: nowrap;
-        }
-    #alumni-detail td::after{
-        content:  '';
-        display: inline-block;
-        line-height: 1.5;
-        margin-left: 0;
-        /* margin-bottom: 20px; */
-        padding: px;
-        color: #000;
-        font-size: 20px;
-        width: 100%;
-        white-space: nowrap;
-    }
+    #alumni-detail tr + #alumni-detail tr { margin-top: 0 !important; }
+  
     #content-login .card{
         margin: 40px;
         border-radius: 20px;

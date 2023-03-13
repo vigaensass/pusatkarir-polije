@@ -33,21 +33,31 @@
                                     </div>
                                     <form class="mt-4">
                                         <div class="form-group">
-                                            <select class="form-select " style="border-radius: 12px;" aria-label="Default select example">
-                                                <option selected>Register As</option>
+                                            <select class="form-select " style="border-radius: 12px;" aria-label="Default select example" id="level">
                                                 <option value="1">Alumni / Mahasiswa Polije</option>
                                                 <option value="2">Non Alumni Polije</option>
                                                 <option value="3">Perusahaan</option>
                                             </select>
                                         </div>
-                                        <div class="form-group mt-3">
+                                        <div class="form-group mt-3" id="non-alumni">
                                             <input type="nim" class="form-control" style="border-radius: 12px;" id="exampleInputEmail1" placeholder="NIM" aria-describedby="emailHelp">
                                             <p><small>Masukkan NIM Anda maka secara otomatis biodata Anda akan tampil di form registrasi ini. Jika belum muncul ketik secara manual.</small></p>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <input type="nama-lengkap" class="form-control" style="border-radius: 12px;" placeholder="Nama Lengkap" id="exampleInputPassword1">
+                                            <input type="nama-lengkap"  class="form-control" style="border-radius: 12px;" placeholder="Nama Lengkap" id="nama_lengkap">
                                         </div>
-                                        <div class="form-group mt-3">
+                                        <div class="form-group mt-3 d-none" id="deskripsi_perusahaan">
+                                            <select class="form-select" style="border-radius: 12px;" aria-label="Default select example">
+                                                <option selected>Deskripsi Perusahaan</option>
+                                                <option value="1">D1</option>
+                                                <option value="2">D2</option>
+                                                <option value="3">D3</option>
+                                                <option value="3">D4 / S1</option>
+                                                <option value="3">S2</option>
+                                                <option value="3">S3</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mt-3" id="jenjang">
                                             <select class="form-select" style="border-radius: 12px;" aria-label="Default select example">
                                                 <option selected>Jenjang</option>
                                                 <option value="1">D1</option>
@@ -58,7 +68,10 @@
                                                 <option value="3">S3</option>
                                             </select>
                                         </div>
-                                        <div class="form-group mt-3">
+                                        <div class="form-group mt-3 d-none" id="perguruan_tinggi">
+                                            <input type="nama-lengkap" class="form-control" style="border-radius: 12px;" placeholder="Perguruan Tinggi" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-group mt-3" id="jurusan">
                                             <select class="form-select" style="border-radius: 12px;" aria-label="Default select example">
                                                 <option selected>Jurusan</option>
                                                 <option value="1">BAHASA, KOMUNIKASI DAN PARIWISATA</option>
@@ -73,7 +86,7 @@
                                             </select>
                                         </div>
                                         <div class="form-group mt-3">
-                                            <select class="form-select" style="border-radius: 12px;" aria-label="Default select example">
+                                            <select class="form-select" id="program_studi" style="border-radius: 12px;" aria-label="Default select example">
                                                 <option selected>Program Studi</option>
                                                 <option value="1">AKUNTANSI SEKTOR PUBLIK</option>
                                                 <option value="2">BAHASA INGGRIS</option>
@@ -118,20 +131,45 @@
                                                 <option value="3">TEKNOLOGI REKAYASA PANGAN</option>
                                             </select>
                                         </div>
-                                        <div class="form-group mt-3">
-                                            <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="No Telp." id="exampleInputPassword1">
+                                        <div id="perusahaan" class="d-none">
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Email Perusahaan" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Alamat Perusahaan" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Contact Person" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="No. Telepon" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Email CP" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Password" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="Confirm Password" id="exampleInputPassword1">
+                                            </div>
                                         </div>
-                                        <div class="form-group mt-3">
-                                            <input type="email" class="form-control" style="border-radius: 12px;" placeholder="Email" id="exampleInputPassword1">
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <input type="linkedin" class="form-control" style="border-radius: 12px;" placeholder="URL LinkedIn" id="exampleInputPassword1">
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <input type="password" class="form-control" style="border-radius: 12px;" placeholder="Password" id="exampleInputPassword1">
-                                        </div>
-                                        <div class="form-group mt-3">
-                                            <input type="confirm-password" class="form-control" style="border-radius: 12px;" placeholder="Confirm Password" id="exampleInputPassword1">
+                                        <div id="selain_perusahaan" >
+                                            <div class="form-group mt-3">
+                                                <input type="no-phone" class="form-control" style="border-radius: 12px;" placeholder="No Telp." id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="email" class="form-control" style="border-radius: 12px;" placeholder="Email" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="linkedin" class="form-control" style="border-radius: 12px;" placeholder="URL LinkedIn" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="password" class="form-control" style="border-radius: 12px;" placeholder="Password" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="form-group mt-3">
+                                                <input type="confirm-password" class="form-control" style="border-radius: 12px;" placeholder="Confirm Password" id="exampleInputPassword1">
+                                            </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6">
@@ -149,7 +187,7 @@
                                                                             <i class="fa fa-folder mx-2" aria-hidden="true"></i>
                                                                             <h5 class="align-self-center m-0"><b>Browser</b></h5>
                                                                         </div>
-                                                                        <h6 class="mt-10 mb-70">Upload KTM / Ijazah</h6>
+                                                                        <h6 class="mt-10 mb-70" id="text_input_satu">Upload KTM / Ijazah</h6>
                             
                                       
                                                                     </div>
@@ -177,7 +215,7 @@
                                                                             <i class="fa fa-folder mx-2" aria-hidden="true"></i>
                                                                             <h5 class="align-self-center m-0"><b>Browser</b></h5>
                                                                         </div>
-                                                                        <h6 class="mt-10 mb-70">Upload Foto</h6>
+                                                                        <h6 class="mt-10 mb-70" id="text_input_dua">Upload Foto</h6>
                             
                                       
                                                                     </div>
@@ -210,4 +248,48 @@
 <!-- swipper js -->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="../js/custom.js"></script>
+<script>
+    $("#level").change(function() {
+        var id_level = $(this).val();
+        if (id_level == 1) {
+            $('#non-alumni').removeClass('d-none');
+            $('#perguruan_tinggi').addClass('d-none');
+            $('#deskripsi_perusahaan').addClass('d-none');
+            $('#jenjang').removeClass('d-none');
+            $('#jurusan').removeClass('d-none');
+            $('#program_studi').removeClass('d-none');
+            $('#perusahaan').addClass('d-none');
+            $('#selain_perusahaan').removeClass('d-none');
+            document.getElementById("nama_lengkap").placeholder = "Nama Lengkap";
+            document.getElementById("text_input_dua").innerText = "Upload Foto";
+            document.getElementById("text_input_satu").innerText = "Upload KTM/Ijazah";
+
+        }else if(id_level == 2){
+            $('#non-alumni').addClass('d-none');
+            $('#jenjang').removeClass('d-none');
+            $('#jurusan').removeClass('d-none');
+            $('#program_studi').removeClass('d-none');
+            $('#perguruan_tinggi').removeClass('d-none');
+            $('#deskripsi_perusahaan').addClass('d-none');
+            $('#perusahaan').addClass('d-none');
+            $('#selain_perusahaan').removeClass('d-none');
+            document.getElementById("nama_lengkap").placeholder = "Nama Lengkap";
+            document.getElementById("text_input_dua").innerText = "Upload Foto";
+            document.getElementById("text_input_satu").innerText = "Upload KTM/Ijazah";
+        }else{
+            $('#perusahaan').removeClass('d-none');
+            $('#selain_perusahaan').addClass('d-none');
+            $('#non-alumni').addClass('d-none');
+            $('#jenjang').addClass('d-none');
+            $('#jurusan').addClass('d-none');
+            $('#program_studi').addClass('d-none');
+            $('#deskripsi_perusahaan').removeClass('d-none');
+            document.getElementById("nama_lengkap").placeholder = "Nama Perusahaan";
+            document.getElementById("text_input_dua").innerText = "Logo Perusahaan";
+            document.getElementById("text_input_satu").innerText = "No. SIUP";
+            
+
+        }
+    });
+</script>
 </html>
