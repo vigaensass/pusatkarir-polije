@@ -386,7 +386,7 @@ button:hover.btn-outline-primary,a:hover.btn-outline-primary{
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     background: linear-gradient(270deg, rgba(98, 98, 98, 0.6) 0%, rgba(251, 251, 251, 0.6) 100%);
 }
 .artikel .card img{
@@ -742,7 +742,7 @@ tr th.text-dua{
 .text-mahasiswa .text-header{
     width: 25%;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     padding-left: 20px;
 }
 .text-mahasiswa .text-content{
@@ -750,8 +750,19 @@ tr th.text-dua{
     padding: 0;
     margin-bottom: 20px;
 
+}
+#content-login{
+    background-image: url(../img/bg-login.jpg);
+    background-position:center;
+    background-size:cover; 
+    border:none; 
+    height: max-content;
 }   
-
+#content-login .card#login {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
 @media only screen and  (max-width: 760px) {
     .text-mahasiswa .text-header{
         width: 200px;
@@ -928,17 +939,21 @@ tr th.text-dua{
     #alumni-detail tr { border: 1px solid #fff; padding: 0; }
     #alumni-detail th { border: 1px solid #fff; padding-bottom: 0; }
     #alumni-detail tr + #alumni-detail tr { margin-top: 0 !important; }
-  
+    
+   
     #content-login .card{
         margin: 40px;
         border-radius: 20px;
     }
     #content-login .card .card-body img{
-        width: 250px;
+        width:320px;
     }
-    #content-login .card .card-body{
-        margin: 0;
+    #content-login .card#login{
+        margin: 20px;
         padding: 0;
+        height: 550px;
+        position: relative;
+        top: 150px;
     }
     #content-login .card .card-body .test{
         padding: 0;
